@@ -1,0 +1,35 @@
+{
+    "name": "ebs-hal-uc",
+    "version": "0.1.0",
+    "description": "uC HAL interface for EBS Projects",
+    "keywords": "ebs",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ebs-universe/piolib-hal-uc"
+    },
+    "authors": {
+        "name": "Chintalagiri Shashank",
+        "email": "shahshank.chintalagiri@gmail.com",
+        "url": "https://github.com/chintal",
+        "maintainer": true
+    },
+    "license": "LGPL-3.0-or-later",
+    "homepage": "https://github.com/ebs-universe",
+    "frameworks": "*",
+    "platforms": [
+        "atmelavr"
+    ],
+    "dependencies": [
+        { 
+            "owner": "chintal",
+            "name": "ebs-ds",
+            "version": "^0.2.0"
+        },
+        {
+            "owner": "chintal",
+            "name": "ebs-hal-uc-avr",
+            "version": "^0.0.1",
+            "platforms":  ["atmelavr"]
+        }
+    ]
+  }
