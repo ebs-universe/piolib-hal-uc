@@ -9,12 +9,12 @@
     },
     "authors": {
         "name": "Chintalagiri Shashank",
-        "email": "shahshank.chintalagiri@gmail.com",
+        "email": "shashank.chintalagiri@gmail.com",
         "url": "https://github.com/chintal",
         "maintainer": true
     },
     "license": "LGPL-3.0-or-later",
-    "homepage": "https://github.com/ebs-universe",
+    "homepage": "https://ebs-universe.github.io/piolib-hal-uc",
     "frameworks": "*",
     "platforms": [
         "atmelavr"
