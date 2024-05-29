@@ -57,7 +57,7 @@
 static inline void timer_init(uint8_t intfnum);
 
 // Change timer prescaler.
-static inline void timer_set_prescaler(uint8_t intfnum, uint8_t prescaler);
+static inline void timer_set_prescaler(uint8_t intfnum, uint16_t prescaler);
 
 // Start the timer in the provided mode. 
 static inline void timer_set_mode(uint8_t intfnum, uint8_t mode);
@@ -97,6 +97,6 @@ static inline uint16_t timer_get_cmr_ch(uint8_t intfnum, uint8_t channel);
 
 #endif
 
-#include "uc/timer_impl.h"
-#include "uc/timer_handlers.h"
+#include "hal_platform/timer_impl.h"
+#include "hal_platform/timer_handlers.h"
 #endif
