@@ -86,7 +86,6 @@ uint8_t id_write(uint8_t len, uint8_t * content);
 /**@}*/ 
 
 // Set up the implementation
-#include "uc/id_impl.h"
+#include <hal_platform/id_impl.h>
 
 #endif
-
