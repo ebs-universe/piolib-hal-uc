@@ -73,14 +73,14 @@
  */
 
 #include "map.h"
-// #include "id.h"
-// #include "adc.h"
-// #include "core.h"
-// #include "entropy.h"
+#include "core.h"
 #include "gpio.h"
 #include "uart.h"
-// #include "spi.h"
 #include "timer.h"
+#include "entropy.h"
+// #include "id.h"
+// #include "adc.h"
+// #include "spi.h"
 // #include "usb.h"
 
 #endif

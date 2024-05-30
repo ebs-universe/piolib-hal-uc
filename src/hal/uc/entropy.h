@@ -62,10 +62,10 @@
 /**
  * @brief Enter the entropy accumulation mode. 
  * 
- * This function will take over and reconfigure some peripherals in order 
- * to accumulate entropy. The implementation of this function should ensure
- * that it keeps a copy of everything it changes so that it can later be 
- * restored during deinitialization.
+ * This function will likely take over and reconfigure some peripherals in 
+ * order to accumulate entropy. The implementation of this function should 
+ * ensure that it keeps a copy of everything it changes so that it can later 
+ * be restored during deinitialization.
  * 
  * @warning You should make sure that doing this does not interfere with 
  *          any peripherals you may already have initialized on your 
@@ -77,15 +77,31 @@
 void entropy_init(void);
 
 /**
- * @brief Get one byte of entropy.
+ * @brief Get size of accumulated entropy in the the pool
  * 
- * When called when in the entropy accumulation mode, this function will 
- * accumulate and return one byte of entropy. This should be assumed to 
- * be a blocking call and is expected to be used only in the early stages 
- * of application initialization.
+ * When called, this function returns the length of entropy bytes accumulated 
+ * in the pool. The application can use this to ensure there is entropy to 
+ * return before asking for asking for actual entropy bytes. 
+ * 
+ * This function should be called only after entropy_init is called atleast 
+ * once.
  * 
  */
-uint8_t entropy_get_byte(void);
+static inline uint8_t entropy_available(void);
+
+/**
+ * @brief Get one byte of entropy.
+ * 
+ * When called, this function returns one byte of accumulated entropy. The 
+ * application must ensure there is entropy to return before calling this. 
+ * If called with no accumulated entropy, this function will return 0. Note
+ * that an actual entropy byte could also, in principle, be 0. 
+ * 
+ * This function should be called only after entropy_init is called atleast 
+ * once.
+ * 
+ */
+static inline uint8_t entropy_get_byte(void);
 
 /**
  * @brief Leave the entropy accumulation mode. 
@@ -103,7 +119,7 @@ void entropy_deinit(void);
 /**@}*/ 
 
 // Set up the implementation
-#include "uc/entropy_impl.h"
+#include <hal_platform/entropy_impl.h>
 
 #endif
 

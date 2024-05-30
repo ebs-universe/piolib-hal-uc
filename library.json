@@ -28,7 +28,7 @@
         {
             "owner": "chintal",
             "name": "ebs-hal-uc-avr",
-            "version": "^0.0.2",
+            "version": "^0.0.3",
             "platforms":  ["atmelavr"]
         }
     ]

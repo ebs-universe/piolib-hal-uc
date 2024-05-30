@@ -38,19 +38,22 @@
  * left to the implementation layer at `core_impl.h`.
  */
 /**@{*/ 
-/** Hold the watchdog and prevent reset due to watchdog timeout.*/
-static inline void watchdog_hold(void);
-
-/** Start the watchdog timer.*/
-static inline void watchdog_start(void);
-
-/** Clear the watchdog timer.*/
-void watchdog_clear(void);
-
 /** 
- * Initialize the watchdog timer to some default interval.
+ * Initialize the watchdog timer to some default interval. If the platform 
+ * does not allow setting of watchdog parameters separate from start, then 
+ * this function does nothing. 
  */
 void watchdog_init(void);
+
+/** Hold the watchdog and prevent reset due to watchdog timeout.*/
+void watchdog_hold(void);
+
+/** Start the watchdog timer.*/
+void watchdog_start(void);
+
+/** Clear the watchdog timer.*/
+static inline void watchdog_clear(void);
+
 /**@}*/ 
 
 /**
@@ -73,6 +76,13 @@ void power_set_full(void);
  * left to the implementation layer at `core_impl.h`.
  */
 /**@{*/ 
+
+/** Set the clock prescaler. See the specific HAL implementation for 
+ * what is allowed here and what the implications of changing the 
+ * prescaler are going to be. 
+ */
+void clock_set_prescaler(uint16_t ps);
+
 /** Set clock to some sane default. For now, we don't care about the 
  * details. Since this is a one-off thing, we'll also make it a regular 
  * function and not bother about the overhead. 
@@ -81,7 +91,8 @@ void clock_set_default(void);
 /**@}*/ 
 
 // Set up the implementation
-#include "uc/core_impl.h"
+#include <hal_platform/core_impl.h>
+#include <hal_platform/core_handlers.h>
 
 #endif
 
