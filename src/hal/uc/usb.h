@@ -20,15 +20,14 @@
  */
 
 /**
- * @file hal_uc_usb.h
+ * @file usb.h
  * @brief HAL for USB interface
  *
  * This file is the hardware abstraction layer for uC USB interfaces. Due to 
  * the complexity of the USB implentation, this layer is handled differently for
  * USB compared to the other peripherals. The HAL only has minimal control over
  * the interface, and most of the details are left to the underlying 
- * implementation. Most configuration details are not taken from the PUM and 
- * are instead hardcoded into the implementation. 
+ * implementation. Most configuration details are hardcoded into the implementation. 
  * 
  * When porting to a different board/uc/product, care must be taken. The needed
  * configuration data should go into the underlying implementation. As such, it
@@ -54,37 +53,34 @@
 #ifndef HAL_UC_USB_H
 #define HAL_UC_USB_H
 
-#include <stdarg.h>
-#include <platform/types.h>
 #include "map.h"
 
-#ifdef uC_INCLUDE_USB_IFACE
+#if uC_USB_ENABLED
 
 /**
  * @name USB Connection Statuses 
  */
 /**@{*/ 
-
 /** \brief USB Host is not connected */
-#define HUSB_ST_DISCONNECTED            ST_USB_DISCONNECTED
+#define USB_ST_DISCONNECTED            0
 
 /** \brief USB Host is connected but not enumerated */
-#define HUSB_ST_NOTENUMERATED           ST_USB_CONNECTED_NO_ENUM
+#define USB_ST_NOTENUMERATED           1
 
 /** \brief USB Enumeration in progress */
-#define HUSB_ST_ENUMERATING             ST_ENUM_IN_PROGRESS
+#define USB_ST_ENUMERATING             2
 
 /** \brief USB is ready for use */
-#define HUSB_ST_ACTIVE                  ST_ENUM_ACTIVE
+#define USB_ST_ACTIVE                  3
 
 /** \brief Host has placed the device in suspend */
-#define HUSB_ST_SUSPENDED               ST_ENUM_SUSPENDED
+#define USB_ST_SUSPENDED               4
 
 /** \brief Device suspended before enumeration */
-#define HUSB_ST_NOENUM_SUSPENDED        ST_NOENUM_SUSPENDED
+#define USB_ST_NOENUM_SUSPENDED        5
 
 /** \brief USB Error */
-#define HUSB_ST_ERROR                   ST_ERROR
+#define USB_ST_ERROR                   6
 /**@}*/ 
 
 /**
@@ -99,6 +95,9 @@ static inline void usb_init(void);
 
 /**
  * \brief Enable the USB module. 
+ * 
+ * This function may be deprecated. Use usb_connect() and usb_diconnect() instead, 
+ * while usb_disable() should be treated as usb_deinit().
  * 
  * Needed only if USB is to be disabled intermittently. Otherwise, `usb_setup()` 
  * should also execute this function or equivalent.
@@ -133,12 +132,11 @@ static inline void usb_disconnect(void);
  * \returns Status as specified as one of the allowed status defines.
  *          
  */
-static inline uint8_t usb_status(void);
+static inline uint8_t usb_get_status(void);
 
 /**@}*/ 
 
+#include <hal_platform/usb/usb_impl.h>
+#include <hal_platform/usb/usb_handlers.h>
 #endif
-
-#include "uc/usb_impl.h"
-#include "uc/usb_handlers.h"
 #endif

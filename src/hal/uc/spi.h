@@ -21,7 +21,7 @@
 
 
 /**
- * @file hal_uc_spi.h
+ * @file spi.h
  * @brief HAL for SPI interfaces
  *
  * This file is the hardware abstraction layer for uC SPI interfaces
@@ -33,10 +33,9 @@
 #ifndef HAL_UC_SPI_H
 #define HAL_UC_SPI_H
 
-#include <platform/types.h>
 #include "map.h"
 
-#ifdef uC_INCLUDE_SPI_IFACE
+#ifdef uC_INCLUDE_SPI
 
 /**
  * @name SPI API Setup and Reactor Functions
@@ -177,11 +176,11 @@ static inline uint8_t spi_txrx_bare(uint8_t intfnum, uint8_t byte);
 
 /**@}*/ 
 
-#endif
-
 // Set up the implentation
 #include "uc/spi_impl.h"
 #include "uc/spi_handlers.h"
+
+#endif
 #endif
 
 

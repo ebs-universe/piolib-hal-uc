@@ -19,7 +19,7 @@
 */
 
 /**
- * @file hal_uc_map.h
+ * @file map.h
  * @brief HAL for uC Peripheral Map
  *
  * 
@@ -27,6 +27,14 @@
 
 #ifndef HAL_UC_MAP_H
 #define HAL_UC_MAP_H
+
+#include <stdint.h>
+
+#include <platform/types.h>
+#include <application.h>
+
+#include <platform/debug.h>
+#include <platform/cpu.h>
 
 #include <hal_platform/uc_map_impl.h>
 

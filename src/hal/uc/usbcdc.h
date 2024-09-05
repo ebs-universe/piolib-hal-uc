@@ -19,8 +19,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
  */
 /**
- * @file hal_uc_usbcdc.h
+ * @file usbcdc.h
  * @brief HAL for USB CDC interface
+ * 
+ * We're settling on tinyusb to provide the underlying USB implementation.
  * 
  * @see [USB API Integration and Usage Notes](@ref usbhal)
  * 
@@ -32,13 +34,10 @@
 #define HAL_UC_USBCDC_H
 
 #include <stdarg.h>
-#include <platform/transport.h>
-#include <platform/types.h>
 #include "map.h"
+#include <platform/transport.h>
 
-#ifdef uC_INCLUDE_USB_IFACE
-
-#if uC_USBCDC_ENABLED
+#if uC_USBCDC_ENABLED && uC_USB_ENABLED
 
 /**
  * @name USB CDC Interface API Functions
@@ -123,7 +122,7 @@ static inline void usbcdc_send_flush(uint8_t intfnum);
  * \param len Length of the data to be transmitted
  * \param token Token against which the lock should be obtained
  */
-static inline uint8_t usbcdc_reqlock(uint8_t intfnum, uint8_t len, uint8_t token);
+static inline HAL_BASE_t usbcdc_reqlock(uint8_t intfnum, HAL_BASE_t len, uint8_t token);
 
 
 /**
@@ -146,8 +145,8 @@ static inline uint8_t usbcdc_reqlock(uint8_t intfnum, uint8_t len, uint8_t token
  * @see usbcdc_send_trigger()
  * @see usbcdc_send_flush()
  */
-static inline uint8_t usbcdc_putc(uint8_t intfnum, uint8_t byte, 
-                                  uint8_t token, uint8_t handlelock);
+static inline HAL_BASE_t usbcdc_putc(uint8_t intfnum, uint8_t byte, 
+                                     uint8_t token, HAL_BASE_t handlelock);
 
 /**
  * @brief TX buffer prep function - write
@@ -165,31 +164,31 @@ static inline uint8_t usbcdc_putc(uint8_t intfnum, uint8_t byte,
  * @see usbcdc_send_trigger()
  * @see usbcdc_send_flush()
  */
-static inline uint8_t usbcdc_write(uint8_t intfnum, uint8_t *buffer, uint8_t len, 
-                                   uint8_t token);
+static inline HAL_BASE_t usbcdc_write(uint8_t intfnum, void * buffer, HAL_BASE_t len, 
+                                      uint8_t token);
 
-/**
- * \brief Get the current status of a specific USB CDC TX interface.
- * 
- * \warning This function for MSP430 USB API will report USB CDC TX ready even 
- * before the last transaction is completed and the txdone handlers are called. 
- * 
- * \param intfNum Interface Number
- * \returns 0 if CDC TX is in use or otherwise not available, 1 if CDC TX is
- *          ready to recieve additional data from a user buffer.
- */
-static inline uint8_t usbcdc_txready(uint8_t intfNum);
+// /**
+//  * \brief Get the current status of a specific USB CDC TX interface.
+//  * 
+//  * \warning This function for MSP430 USB API will report USB CDC TX ready even 
+//  * before the last transaction is completed and the txdone handlers are called. 
+//  * 
+//  * \param intfNum Interface Number
+//  * \returns 0 if CDC TX is in use or otherwise not available, 1 if CDC TX is
+//  *          ready to recieve additional data from a user buffer.
+//  */
+// static inline usbcdc_txready(uint8_t intfNum);
 
 static inline uint8_t usbcdc_getc(uint8_t intfnum);
 
-static inline uint8_t usbcdc_read(uint8_t intfnum, uint8_t *buffer, uint8_t len);
+static inline HAL_BASE_t usbcdc_read(uint8_t intfnum, void * buffer, HAL_BASE_t len);
 
 /**
  * \brief Get number of unhandled bytes of a specific USB CDC RX interface.
  * \param intfNum Interface Number
  * \returns Number of unhandled bytes waiting in the interface API buffer.
  */
-static inline uint8_t usbcdc_population_rxb(uint8_t intfNum);
+static inline HAL_BASE_t usbcdc_population_rxb(uint8_t intfNum);
 
 /**
  * \brief Discard all unhandled bytes of a specific USB CDC RX interface.
@@ -199,10 +198,10 @@ static inline void usbcdc_discard_rxb(uint8_t intfNum);
 
 /**@}*/
 
+#if uC_PT_USBCDC_ENABLED
 extern const pluggable_transport_t ptransport_usbcdc;
-
-#endif 
 #endif
 
-#include "uc/usbcdc_impl.h"
+#include <hal_platform/usb/usbcdc_impl.h>
+#endif 
 #endif

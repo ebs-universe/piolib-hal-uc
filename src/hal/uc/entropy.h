@@ -20,7 +20,7 @@
  */
 
 /**
- * @file hal_uc_entropy.h
+ * @file entropy.h
  * @brief HAL for uC entropy source
  *
  * This file is the hardware abstraction layer for generation of entropy
@@ -36,7 +36,7 @@
  * 
  * For example, the MSP430 entropy sources will take over both ACLK and SMCLK, 
  * and anything depending on those clocks, including system time, for 
- * instance, will  misbehave. On other platforms, ADCs may be unavailable 
+ * instance, will misbehave. On other platforms, ADCs may be unavailable 
  * during accumulation.
  * 
  * The application must ensure to exit the entropy accumulation mode after it
@@ -46,6 +46,11 @@
  * Using such mathematical means to generate a byte stream is left to the 
  * application layer, which may use whatever algorithms or libraries to 
  * provide a bulk pseudo-random stream if needed.
+ * 
+ * The following general Entropy Modes may be implemented:
+ *  - 1 : Accumulate into pool, then stop
+ *  - 2 : Accumulate into pool, automatically refill when used (if TRNG available)
+ *  - 3 : Acquire directly from TRNG (not recommended, usually not implemented)
  * 
  */
 
@@ -59,13 +64,14 @@
  * 
  */
 /**@{*/ 
+
 /**
- * @brief Enter the entropy accumulation mode. 
+ * @brief Enter the entropy accumulation mode.  
  * 
- * This function will likely take over and reconfigure some peripherals in 
- * order to accumulate entropy. The implementation of this function should 
- * ensure that it keeps a copy of everything it changes so that it can later 
- * be restored during deinitialization.
+ * In most platforms (those without a hardware TRNG), this function will likely 
+ * take over and reconfigure some peripherals in order to accumulate entropy. 
+ * The implementation of this function should ensure that it keeps a copy of 
+ * everything it changes so that it can later be restored during deinitialization.
  * 
  * @warning You should make sure that doing this does not interfere with 
  *          any peripherals you may already have initialized on your 

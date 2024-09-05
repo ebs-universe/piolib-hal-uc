@@ -33,12 +33,11 @@
 #ifndef HAL_UC_UART_H
 #define HAL_UC_UART_H
 
+#include "map.h"
 #include <stdarg.h>
 #include <platform/transport.h>
-#include <platform/types.h>
-#include "map.h"
 
-#ifdef uC_INCLUDE_UART_IFACE
+#if uC_UART_ENABLED
 
 /**
  * @name UART API Setup Functions
@@ -200,11 +199,12 @@ static inline void uart_putc_bare(uint8_t intfnum, uint8_t byte);
 static inline uint8_t uart_getc_bare(uint8_t intfnum);
 /**@}*/ 
 
+#if uC_UART_PT_ENABLED
 extern const pluggable_transport_t ptransport_uart;
-
 #endif
 
 // Set up the implementation
 #include <hal_platform/uart_impl.h>
 #include <hal_platform/uart_handlers.h>
+#endif
 #endif

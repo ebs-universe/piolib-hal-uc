@@ -17,7 +17,8 @@
     "homepage": "https://ebs-universe.github.io/piolib-hal-uc",
     "frameworks": "*",
     "platforms": [
-        "atmelavr"
+        "atmelavr",
+        "ststm32"
     ],
     "dependencies": [
         { 
@@ -30,6 +31,12 @@
             "name": "ebs-hal-uc-avr",
             "version": "^0.0.4",
             "platforms":  ["atmelavr"]
+        },
+        {
+            "owner": "chintal",
+            "name": "ebs-hal-uc-stm32f4xx",
+            "version": "^0.0.1",
+            "platforms":  ["ststm32"]
         }
     ]
   }

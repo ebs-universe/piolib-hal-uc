@@ -20,19 +20,46 @@
  */
 
 /**
- * @file hal_uc_id.h
+ * @file id.h
  * @brief HAL for uC ID
  *
  * This file is the hardware abstraction layer for acquring unique 
  * identification information from a uC, using the best available
  * mechanism for the platform.
+ * 
+ * This HAL framework expects there to be two possible lengths for the ID.
+ * 
+ *  - uC_ID_MAXLEN : Length of the underlying ID source, defined by the implementation.  
+ *  - uC_ID_LENGTH : Length of the standardized ID source, ie, 8 bytes.
+ * 
+ * If the underlying ID source is not 8 bytes, the implementation should 
+ * repack it into 8-bytes while preserving as much uniqueness as possible.
+ * It might be done just once at startup and stored in RAM or recalculated 
+ * at each call to the HAL.  
+ * 
+ * The repacked value should be returned only when an 8 byte ID is requested.
+ * Note that any other length requested will return bytes from the original
+ * underlying ID.
+ * 
+ * Applications critically dependent on uniqueness of the ID or on the 
+ * security provided by an in-silicon serial number should use uC_ID_MAXLEN 
+ * instead. 
+ * 
  */
 
 #ifndef HAL_UC_ID_H
 #define HAL_UC_ID_H
 
-#include <platform/types.h>
 #include "map.h"
+
+#if uC_ID_ENABLED
+
+#define uC_ID_LENGTH    8
+
+typedef union DeviceID_t {
+    HAL_BASE_t native[uC_ID_LENGTH / sizeof(HAL_BASE_t)];
+    uint8_t bytes[uC_ID_LENGTH];
+} DeviceID_t;
 
 /**
  * @name ID API Functions
@@ -43,12 +70,17 @@
 /**
  * Perform any startup initialization needed to support the ID API. 
  * Most implementations might not actually do anything here.
+ * 
+ * This hook can also be used by the implementation to generate the 
+ * standardized length ID (8 bytes) if the generation is computationally 
+ * expensive.  
+ * 
  */
 void id_init(void);
 
 /**
  * @brief Read the uC's unique identification.
- * @param maxlen Maximum length of the identifier to write to the buffer. 
+ * @param maxlen Length (in bytes) of the identifier to write to the buffer. 
  * @param buffer Pointer to a buffer into which the ID is to be written.
  * @return Number of bytes of the ID which were written to the buffer.
  * 
@@ -58,14 +90,13 @@ void id_init(void);
  * The nature of the identifier used is dependent on the uC family. In-silicon 
  * serial number is the ideal identifier when available. See the specific uC 
  * implementation for information about what is used for each platform.
- * 
- * If the identifier is longer than the specified maxlen, the identifier is 
- * truncated from the LSB side. Truncated identifiers should not be treated 
- * as valid, and the application must ensure that sufficient length is read 
- * out for each target platform.
+ *  
+ * If the maxlen requested is 8, then the underlying implementation should 
+ * return a repacked version of the ID in standardized length while preserving 
+ * as much uniqueness as possible.
  *
  */
-uint8_t id_read(uint8_t maxlen, void * buffer);
+uint8_t id_read(uint8_t len, void * buffer);
 
 /**
  * @brief Write the uC's unique identification.
@@ -80,12 +111,17 @@ uint8_t id_read(uint8_t maxlen, void * buffer);
  * 
  * For platforms which do not require this functionality, this function should
  * return 0 for all provided inputs and not have any other effect.
+ * 
+ * Generally, the length to be written here should always be 8 bytes.
  *
+ * Note that though len is taken in bytes, application code must ensure that 
+ * the provided length is a multiple of HAL_INT_t.
  */
-uint8_t id_write(uint8_t len, uint8_t * content);
+uint8_t id_write(uint8_t len, void * content);
 /**@}*/ 
 
 // Set up the implementation
 #include <hal_platform/id_impl.h>
 
+#endif
 #endif

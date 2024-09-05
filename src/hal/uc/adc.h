@@ -20,7 +20,7 @@
  */
 
 /**
- * @file hal_uc_adc.h
+ * @file adc.h
  * @brief HAL for uC Internal ADC interfaces
  *
  * This file is the hardware abstraction layer for uC internal ADC interfaces. 
@@ -36,7 +36,7 @@
  * 
  * The HAL ADC interface understands the following ADC elements, in one form 
  * or the other. Many of these parameters will be as preprocessor definitions
- * provided by the uC support file in the bsp.
+ * provided by the uC support file.
  * 
  *  - Number of channels
  *  - Single shot conversion of a single channel
@@ -53,6 +53,10 @@
 
 #ifndef HAL_UC_ADC_H
 #define HAL_UC_ADC_H
+
+#include "map.h"
+
+#if uC_ADC_ENABLED
 
 /**
  * @name ADC API Functions
@@ -75,5 +79,6 @@ void adc_trigger_single(uint8_t chnum);
 // Set up the implementation
 #include "uc/adc_impl.h"
 
+#endif
 #endif
 
