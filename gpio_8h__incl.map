@@ -1,0 +1,11 @@
+<map id="hal/uc/gpio.h" name="hal/uc/gpio.h">
+<area shape="rect" id="node1" title="HAL for uC GPIOs." alt="" coords="257,5,362,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,162,136,189"/>
+<area shape="rect" id="node3" href="$map_8h.html" title="HAL for uC Peripheral Map." alt="" coords="278,80,341,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="365,80,550,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="161,162,231,189"/>
+<area shape="rect" id="node5" title=" " alt="" coords="256,162,363,189"/>
+<area shape="rect" id="node6" title=" " alt="" coords="387,162,522,189"/>
+<area shape="rect" id="node7" title=" " alt="" coords="547,162,664,189"/>
+<area shape="rect" id="node8" title=" " alt="" coords="688,155,848,196"/>
+</map>
