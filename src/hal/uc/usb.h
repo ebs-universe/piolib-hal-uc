@@ -136,7 +136,7 @@ static inline uint8_t usb_get_status(void);
 
 /**@}*/ 
 
-#include <hal_platform/usb/usb_impl.h>
-#include <hal_platform/usb/usb_handlers.h>
+#include <hal_platform/usb_impl.h>
+#include <hal_platform/usb_handlers.h>
 #endif
 #endif

@@ -202,6 +202,6 @@ static inline void usbcdc_discard_rxb(uint8_t intfNum);
 extern const pluggable_transport_t ptransport_usbcdc;
 #endif
 
-#include <hal_platform/usb/usbcdc_impl.h>
+#include <hal_platform/usbcdc_impl.h>
 #endif 
 #endif
