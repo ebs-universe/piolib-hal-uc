@@ -59,6 +59,8 @@
 
 #include "map.h"
 
+#if uC_ENTROPY_ENABLED
+
 /**
  * @name Entropy API Functions
  * 
@@ -122,10 +124,11 @@ static inline uint8_t entropy_get_byte(void);
  * 
  */
 void entropy_deinit(void);
-/**@}*/ 
+/**@}*/
 
 // Set up the implementation
-#include <hal_platform/entropy_impl.h>
+#include <hal_platform/entropy_impl.h> 
 
+#endif
 #endif
 

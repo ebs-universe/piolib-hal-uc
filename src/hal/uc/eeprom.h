@@ -31,8 +31,6 @@
 
 #include "map.h"
 
-#if uC_EEPROM_ENABLED == 1
-
 /**
  * @name EEPROM API Functions
  * Various functions to interact with the eeprom. Implementation is 
@@ -56,9 +54,11 @@
  *   - APP_EEPROM_SIZETYPE
  *   - APP_EEPROM_PAGESIZE
  * 
- * While this should be verified for each underlying implementation,
- * the following guidelines are recommended to implementations : 
+ * While this should be verified by application developers for the 
+ * target implementations, the following are recommended to 
+ * implementations: 
  * 
+ * Provider 0 : No on-chip EEPROM
  * Provider 1 : Regular EEPROM or Data Flash with byte r/w access
  * Provider 2 : Battery Backed SRAM with byte r/w access
  * Provider 3 : EEPROM emulation with Program Flash with page erase
@@ -74,6 +74,8 @@
  *  
  */
 /**@{*/ 
+
+#if uC_EEPROM_ENABLED == 1
 
 /** 
  * Initialize the EEPROM, if it needs any initialization. Most 

@@ -86,7 +86,8 @@
  */
 
 #include "map.h"
-#include "core.h"       
+#include "core.h"     
+#include "crypto.h"  
 #include "gpio.h"       
 #include "id.h"         
 #include "eeprom.h"      

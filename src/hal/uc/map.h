@@ -31,6 +31,7 @@
 #include <stdint.h>
 
 #include <platform/types.h>
+#include <hal/types.h>
 #include <application.h>
 
 #include <platform/debug.h>

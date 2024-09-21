@@ -215,6 +215,9 @@ static inline HAL_BASE_t gpio_get_input(PORTSELECTOR_t port,
 #define GPIO_INT_EDGE_FALLING   0x10
 #define GPIO_INT_EDGE_BOTH      0x11
 
+#define GPIO_INT_ON_RISING      0xF0
+#define GPIO_INT_ON_FALLING     0x00
+
 /** 
  * @brief Configure interrupt on pin change. 
  * 
@@ -256,6 +259,16 @@ static inline void gpio_conf_interrupt(
  * Some platforms may choose to provide a more optimal way of providing this 
  * functionality, such as an inlinable function accepted as a #define. Check 
  * the underlying implementation to see if this function is supported. 
+ * 
+ * The function is called with a uint8_t which can be used by the application 
+ * to determine which interrupt fired. Generally, the uint8_t will be a 
+ * number indicating a bit position. In platforms supporting separate rising
+ * and falling interrupt flags, the MSB of this variable will indicate which 
+ * edge has triggered the interrupt. 
+ * 
+ * Note that if both edges trigger simultaneously or otherwise get stacked, the 
+ * handler will be called twice in such platforms. Platforms which have a single 
+ * flag will only call the handler once.  
  * 
  * @param port Port number
  * @param pin Pin number
