@@ -1,10 +1,13 @@
 <map id="hal/uc/spi.h" name="hal/uc/spi.h">
-<area shape="rect" id="node1" title="HAL for SPI interfaces." alt="" coords="333,5,429,32"/>
-<area shape="rect" id="node2" href="$map_8h.html" title="HAL for uC Peripheral Map." alt="" coords="349,80,412,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,162,76,189"/>
-<area shape="rect" id="node4" title=" " alt="" coords="101,162,231,189"/>
-<area shape="rect" id="node5" title=" " alt="" coords="255,162,362,189"/>
-<area shape="rect" id="node6" title=" " alt="" coords="387,162,521,189"/>
-<area shape="rect" id="node7" title=" " alt="" coords="546,162,663,189"/>
-<area shape="rect" id="node8" title=" " alt="" coords="687,155,847,196"/>
+<area shape="rect" id="node1" title="HAL for SPI interfaces." alt="" coords="327,5,423,32"/>
+<area shape="rect" id="node2" href="$map_8h.html" title="HAL for uC Peripheral Map." alt="" coords="343,80,406,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="11,393,82,420"/>
+<area shape="rect" id="node4" title=" " alt="" coords="47,162,177,189"/>
+<area shape="rect" id="node5" href="$types_8h_source.html" title=" " alt="" coords="202,162,297,189"/>
+<area shape="rect" id="node8" title=" " alt="" coords="321,162,428,189"/>
+<area shape="rect" id="node9" title=" " alt="" coords="453,162,587,189"/>
+<area shape="rect" id="node10" title=" " alt="" coords="612,162,729,189"/>
+<area shape="rect" id="node11" title=" " alt="" coords="753,155,913,196"/>
+<area shape="rect" id="node6" href="$types_2all_8h_source.html" title=" " alt="" coords="125,244,216,271"/>
+<area shape="rect" id="node7" href="$types_2crypto_8h_source.html" title=" " alt="" coords="89,319,164,345"/>
 </map>

@@ -115,20 +115,21 @@ $(document).ready(function(){initNavTree('entropy_8h_source.html',''); initResiz
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="map_8h.html">map.h</a>&quot;</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="entropy_8h.html#aedcbd59a8a1c51c615bfdd6f837bd3e3">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="entropy_8h.html#aedcbd59a8a1c51c615bfdd6f837bd3e3">entropy_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> uint8_t entropy_available(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> uint8_t entropy_get_byte(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="entropy_8h.html#a89cb81ac5ae2f78cfae95b942f3e3adf">  124</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="entropy_8h.html#a89cb81ac5ae2f78cfae95b942f3e3adf">entropy_deinit</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">// Set up the implementation</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#include &lt;hal_platform/entropy_impl.h&gt;</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#if uC_ENTROPY_ENABLED</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> entropy_init(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> uint8_t entropy_available(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> uint8_t entropy_get_byte(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span> entropy_deinit(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">// Set up the implementation</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#include &lt;hal_platform/entropy_impl.h&gt;</span> </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="ttc" id="aentropy_8h_html_a89cb81ac5ae2f78cfae95b942f3e3adf"><div class="ttname"><a href="entropy_8h.html#a89cb81ac5ae2f78cfae95b942f3e3adf">entropy_deinit</a></div><div class="ttdeci">void entropy_deinit(void)</div><div class="ttdoc">Leave the entropy accumulation mode.</div></div>
-<div class="ttc" id="aentropy_8h_html_aedcbd59a8a1c51c615bfdd6f837bd3e3"><div class="ttname"><a href="entropy_8h.html#aedcbd59a8a1c51c615bfdd6f837bd3e3">entropy_init</a></div><div class="ttdeci">void entropy_init(void)</div><div class="ttdoc">Enter the entropy accumulation mode.</div></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="ttc" id="amap_8h_html"><div class="ttname"><a href="map_8h.html">map.h</a></div><div class="ttdoc">HAL for uC Peripheral Map.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -136,7 +137,7 @@ $(document).ready(function(){initNavTree('entropy_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_bd7daeaaa812801dff3000c33ca17751.html">uc</a></li><li class="navelem"><a class="el" href="entropy_8h.html">entropy.h</a></li>
-    <li class="footer">Generated on Mon Sep 16 2024 14:10:05 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 21 2024 15:14:25 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

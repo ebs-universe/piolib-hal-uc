@@ -1,5 +1,5 @@
 <map id="hal/uc/eeprom.h" name="hal/uc/eeprom.h">
 <area shape="rect" id="node1" title="HAL for uC EEPROM peripherals." alt="" coords="5,5,132,32"/>
-<area shape="rect" id="node2" href="$all_8h_source.html" title=" " alt="" coords="22,80,115,107"/>
+<area shape="rect" id="node2" href="$uc_2all_8h_source.html" title=" " alt="" coords="22,80,115,107"/>
 <area shape="rect" id="node3" href="$uc_8h_source.html" title=" " alt="" coords="32,155,105,181"/>
 </map>

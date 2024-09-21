@@ -1,5 +1,5 @@
 <map id="hal/uc/core.h" name="hal/uc/core.h">
 <area shape="rect" id="node1" title="HAL for uC Core peripherals." alt="" coords="5,5,111,32"/>
-<area shape="rect" id="node2" href="$all_8h_source.html" title=" " alt="" coords="11,80,105,107"/>
+<area shape="rect" id="node2" href="$uc_2all_8h_source.html" title=" " alt="" coords="11,80,105,107"/>
 <area shape="rect" id="node3" href="$uc_8h_source.html" title=" " alt="" coords="21,155,95,181"/>
 </map>

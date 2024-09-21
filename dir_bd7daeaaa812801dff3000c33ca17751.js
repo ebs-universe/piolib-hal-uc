@@ -1,10 +1,11 @@
 var dir_bd7daeaaa812801dff3000c33ca17751 =
 [
     [ "adc.h", "adc_8h.html", null ],
-    [ "all.h", "all_8h_source.html", null ],
+    [ "all.h", "uc_2all_8h_source.html", null ],
     [ "core.h", "core_8h.html", null ],
+    [ "crypto.h", "uc_2crypto_8h_source.html", null ],
     [ "eeprom.h", "eeprom_8h.html", null ],
-    [ "entropy.h", "entropy_8h.html", "entropy_8h" ],
+    [ "entropy.h", "entropy_8h.html", null ],
     [ "gpio.h", "gpio_8h.html", "gpio_8h" ],
     [ "id.h", "id_8h.html", null ],
     [ "map.h", "map_8h.html", null ],

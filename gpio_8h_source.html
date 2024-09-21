@@ -163,22 +163,25 @@ $(document).ready(function(){initNavTree('gpio_8h_source.html',''); initResizabl
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#define GPIO_INT_EDGE_FALLING   0x10</span></div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#define GPIO_INT_EDGE_BOTH      0x11</span></div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> gpio_conf_interrupt(</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    PORTSELECTOR_t port, PINSELECTOR_t pin, HAL_BASE_t edge);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> gpio_conf_interrupt_handler(</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    PORTSELECTOR_t port, PINSELECTOR_t pin, <span class="keywordtype">void</span> (*handler)(uint8_t));</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> gpio_interrupt_arm(</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    PORTSELECTOR_t port, PINSELECTOR_t pin);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#define GPIO_INT_ON_RISING      0xF0</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#define GPIO_INT_ON_FALLING     0x00</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> gpio_conf_interrupt(</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    PORTSELECTOR_t port, PINSELECTOR_t pin, HAL_BASE_t edge);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> gpio_conf_interrupt_handler(</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    PORTSELECTOR_t port, PINSELECTOR_t pin, <span class="keywordtype">void</span> (*handler)(uint8_t));</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> gpio_interrupt_disarm(</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> gpio_interrupt_arm(</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    PORTSELECTOR_t port, PINSELECTOR_t pin);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">// Set up the implentation</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#include &lt;hal_platform/gpio_impl.h&gt;</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> gpio_interrupt_disarm(</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    PORTSELECTOR_t port, PINSELECTOR_t pin);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">// Set up the implentation</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#include &lt;hal_platform/gpio_impl.h&gt;</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
 <div class="ttc" id="agpio_8h_html_afdbe206b3c49f019757ab09b3cf52b9c"><div class="ttname"><a href="gpio_8h.html#afdbe206b3c49f019757ab09b3cf52b9c">gpio_init</a></div><div class="ttdeci">void gpio_init(void)</div><div class="ttdoc">Initialize the GPIO peripherals.</div></div>
 <div class="ttc" id="amap_8h_html"><div class="ttname"><a href="map_8h.html">map.h</a></div><div class="ttdoc">HAL for uC Peripheral Map.</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -187,7 +190,7 @@ $(document).ready(function(){initNavTree('gpio_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_bd7daeaaa812801dff3000c33ca17751.html">uc</a></li><li class="navelem"><a class="el" href="gpio_8h.html">gpio.h</a></li>
-    <li class="footer">Generated on Mon Sep 16 2024 14:10:05 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 21 2024 15:14:25 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

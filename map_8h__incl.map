@@ -1,9 +1,12 @@
 <map id="hal/uc/map.h" name="hal/uc/map.h">
-<area shape="rect" id="node1" title="HAL for uC Peripheral Map." alt="" coords="327,5,434,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,87,76,114"/>
-<area shape="rect" id="node3" title=" " alt="" coords="101,87,231,114"/>
-<area shape="rect" id="node4" title=" " alt="" coords="255,87,362,114"/>
-<area shape="rect" id="node5" title=" " alt="" coords="387,87,521,114"/>
-<area shape="rect" id="node6" title=" " alt="" coords="546,87,663,114"/>
-<area shape="rect" id="node7" title=" " alt="" coords="687,80,847,121"/>
+<area shape="rect" id="node1" title="HAL for uC Peripheral Map." alt="" coords="321,5,428,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="11,319,82,345"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,87,177,114"/>
+<area shape="rect" id="node4" href="$types_8h_source.html" title=" " alt="" coords="202,87,297,114"/>
+<area shape="rect" id="node7" title=" " alt="" coords="321,87,428,114"/>
+<area shape="rect" id="node8" title=" " alt="" coords="453,87,587,114"/>
+<area shape="rect" id="node9" title=" " alt="" coords="612,87,729,114"/>
+<area shape="rect" id="node10" title=" " alt="" coords="753,80,913,121"/>
+<area shape="rect" id="node5" href="$types_2all_8h_source.html" title=" " alt="" coords="125,169,216,196"/>
+<area shape="rect" id="node6" href="$types_2crypto_8h_source.html" title=" " alt="" coords="89,244,164,271"/>
 </map>

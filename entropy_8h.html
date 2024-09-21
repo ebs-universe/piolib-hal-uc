@@ -93,11 +93,10 @@ $(document).ready(function(){initNavTree('entropy_8h.html',''); initResizable();
 <p>HAL for uC entropy source.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
-<code>#include &lt;hal_platform/entropy_impl.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for entropy.h:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="entropy_8h__incl.svg" width="100%" height="462"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="entropy_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -108,18 +107,6 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 </div>
 <p><a href="entropy_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Entropy API Functions</div></td></tr>
-<tr class="memitem:aedcbd59a8a1c51c615bfdd6f837bd3e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy_8h.html#aedcbd59a8a1c51c615bfdd6f837bd3e3">entropy_init</a> (void)</td></tr>
-<tr class="memdesc:aedcbd59a8a1c51c615bfdd6f837bd3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enter the entropy accumulation mode. <br  />
-  <a href="entropy_8h.html#aedcbd59a8a1c51c615bfdd6f837bd3e3">More...</a><br /></td></tr>
-<tr class="separator:aedcbd59a8a1c51c615bfdd6f837bd3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89cb81ac5ae2f78cfae95b942f3e3adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="entropy_8h.html#a89cb81ac5ae2f78cfae95b942f3e3adf">entropy_deinit</a> (void)</td></tr>
-<tr class="memdesc:a89cb81ac5ae2f78cfae95b942f3e3adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leave the entropy accumulation mode.  <a href="entropy_8h.html#a89cb81ac5ae2f78cfae95b942f3e3adf">More...</a><br /></td></tr>
-<tr class="separator:a89cb81ac5ae2f78cfae95b942f3e3adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>HAL for uC entropy source. </p>
 <p>This file is the hardware abstraction layer for generation of entropy from the uC.</p>
@@ -134,61 +121,13 @@ Functions</h2></td></tr>
 </ul>
 
 <p class="definition">Definition in file <a class="el" href="entropy_8h_source.html">entropy.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a89cb81ac5ae2f78cfae95b942f3e3adf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89cb81ac5ae2f78cfae95b942f3e3adf">&#9670;&nbsp;</a></span>entropy_deinit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void entropy_deinit </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Leave the entropy accumulation mode. </p>
-<p>This function should also return everything that it changed to how it found it during initialization.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This function should be called to exit the entropy accumulation mode before any major perhipheral or subsystem initialization.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="entropy_8h.html#a89cb81ac5ae2f78cfae95b942f3e3adf" title="Leave the entropy accumulation mode.">entropy_deinit()</a> </dd></dl>
-
-</div>
-</div>
-<a id="aedcbd59a8a1c51c615bfdd6f837bd3e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedcbd59a8a1c51c615bfdd6f837bd3e3">&#9670;&nbsp;</a></span>entropy_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void entropy_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enter the entropy accumulation mode. <br  />
- </p>
-<p>In most platforms (those without a hardware TRNG), this function will likely take over and reconfigure some peripherals in order to accumulate entropy. The implementation of this function should ensure that it keeps a copy of everything it changes so that it can later be restored during deinitialization.</p>
-<dl class="section warning"><dt>Warning</dt><dd>You should make sure that doing this does not interfere with any peripherals you may already have initialized on your application and on your platform.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="entropy_8h.html#a89cb81ac5ae2f78cfae95b942f3e3adf" title="Leave the entropy accumulation mode.">entropy_deinit()</a> </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_bd7daeaaa812801dff3000c33ca17751.html">uc</a></li><li class="navelem"><a class="el" href="entropy_8h.html">entropy.h</a></li>
-    <li class="footer">Generated on Mon Sep 16 2024 14:10:05 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Sep 21 2024 15:14:25 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
