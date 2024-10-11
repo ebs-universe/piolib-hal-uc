@@ -1,12 +1,17 @@
 <map id="hal/uc/map.h" name="hal/uc/map.h">
-<area shape="rect" id="node1" title="HAL for uC Peripheral Map." alt="" coords="321,5,428,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="11,319,82,345"/>
-<area shape="rect" id="node3" title=" " alt="" coords="47,87,177,114"/>
-<area shape="rect" id="node4" href="$types_8h_source.html" title=" " alt="" coords="202,87,297,114"/>
-<area shape="rect" id="node7" title=" " alt="" coords="321,87,428,114"/>
-<area shape="rect" id="node8" title=" " alt="" coords="453,87,587,114"/>
-<area shape="rect" id="node9" title=" " alt="" coords="612,87,729,114"/>
-<area shape="rect" id="node10" title=" " alt="" coords="753,80,913,121"/>
-<area shape="rect" id="node5" href="$types_2all_8h_source.html" title=" " alt="" coords="125,169,216,196"/>
-<area shape="rect" id="node6" href="$types_2crypto_8h_source.html" title=" " alt="" coords="89,244,164,271"/>
+<area shape="rect" id="node1" title="HAL for uC Peripheral Map." alt="" coords="653,5,760,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="295,319,366,345"/>
+<area shape="rect" id="node3" title=" " alt="" coords="581,319,712,345"/>
+<area shape="rect" id="node4" href="$types_8h_source.html" title=" " alt="" coords="446,87,541,114"/>
+<area shape="rect" id="node12" title=" " alt="" coords="653,87,760,114"/>
+<area shape="rect" id="node13" title=" " alt="" coords="785,87,919,114"/>
+<area shape="rect" id="node14" title=" " alt="" coords="944,87,1061,114"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1085,80,1245,121"/>
+<area shape="rect" id="node5" href="$types_2all_8h_source.html" title=" " alt="" coords="429,169,520,196"/>
+<area shape="rect" id="node6" href="$types_2crypto_8h_source.html" title=" " alt="" coords="419,244,493,271"/>
+<area shape="rect" id="node8" href="$types_2rtc_8h_source.html" title=" " alt="" coords="227,244,277,271"/>
+<area shape="rect" id="node11" href="$types_2uart_8h_source.html" title=" " alt="" coords="518,244,578,271"/>
+<area shape="rect" id="node7" href="$constants_2crypto_8h_source.html" title=" " alt="" coords="390,319,557,345"/>
+<area shape="rect" id="node9" href="$constants_2rtc_8h_source.html" title=" " alt="" coords="129,319,271,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,319,104,345"/>
 </map>
