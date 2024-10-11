@@ -97,6 +97,7 @@
 #include "uart.h"
 #include "spi.h"
 #include "usb.h"        
-#include "usbcdc.h"    
+#include "usbcdc.h" 
+#include "rtc.h"
 
 #endif

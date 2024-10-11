@@ -1,6 +1,6 @@
 {
     "name": "ebs-hal-uc",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "uC HAL interface for EBS Projects",
     "keywords": "ebs",
     "repository": {
@@ -26,6 +26,11 @@
             "name": "ebs-ds",
             "version": "^0.2.0"
         },
+        { 
+            "owner": "chintal",
+            "name": "ebs-time",
+            "version": "^0.3.0"
+        },
         {
             "owner": "chintal",
             "name": "ebs-hal-uc-avr",
@@ -35,7 +40,7 @@
         {
             "owner": "chintal",
             "name": "ebs-hal-uc-stm32",
-            "version": "^0.1.1",
+            "version": "^0.1.2",
             "platforms":  ["ststm32"]
         }
     ]

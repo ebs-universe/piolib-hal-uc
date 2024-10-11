@@ -4,59 +4,7 @@
 #define HAL_TYPES_CRYPTO_H
 
 #include <stdint.h>
-
-
-typedef enum{
-    CRYPTO_HW_NEVER,
-    CRYPTO_HW_IFAVAIL,
-    CRYPTO_HW_ALWAYS
-} CRYPTO_HARDWARE_t;
-
-typedef enum{
-    CRYPTO_AES_ECB,
-    CRYPTO_AES_CBC,
-    CRYPTO_AES_CTR,
-    CRYPTO_AES_GCM,
-    CRYPTO_AES_GMAC,
-    CRYPTO_AES_CCM,
-} CRYPTO_ALG_t;
-
-typedef enum{
-    CRYPTO_PREINIT,
-    CRYPTO_IDLE,
-    CRYPTO_READY,
-    CRYPTO_BUSY
-} CRYPTO_ST_t;
-
-// Swap operations to deal with endianness differences.
-typedef enum{
-    CRYPTO_SWAP_1B,
-    CRYPTO_SWAP_8B,
-    CRYPTO_SWAP_16B,
-    CRYPTO_SWAP_NONE
-} CRYPTO_SWAP_t;
-
-typedef enum{
-    CRYPTO_CTX_MODE_IDLE,
-    CRYPTO_CTX_MODE_ENCRYPTION,
-    CRYPTO_CTX_MODE_DECRYPTION,
-    CRYPTO_CTX_MODE_SUSPENDED,
-} CRYPTO_CTX_MODE_t;
-
-typedef enum{
-    CRYPTO_CTX_PHASE_INIT,
-    CRYPTO_CTX_PHASE_PREPKEY,
-    CRYPTO_CTX_PHASE_DERIVATION,
-    CRYPTO_CTX_PHASE_HEADER,
-    CRYPTO_CTX_PHASE_PAYLOAD,
-    CRYPTO_CTX_PHASE_FINAL
-} CRYPTO_CTX_PHASE_t;
-
-typedef enum{
-    CRYPTO_TR_PENDING,
-    CRYPTO_TR_INPROGRESS,
-    CRYPTO_TR_DONE
-} CRYPTO_TR_STATE_t;
+#include <hal/constants/crypto.h>
 
 typedef struct CRYPTO_PROFILE_t{
     const CRYPTO_ALG_t  alg;

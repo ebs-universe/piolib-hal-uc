@@ -1,0 +1,5 @@
+
+#ifndef HAL_CONSTANTS_UART_H
+#define HAL_CONSTANTS_UART_H
+
+#endif

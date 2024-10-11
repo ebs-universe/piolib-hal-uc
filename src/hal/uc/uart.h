@@ -48,7 +48,7 @@
  * Initialize UART. Config parameters for the UART are (currently) defined in UC_MAP.
  * @param intfnum Identifier of the UART interface
  */
-void uart_init(uint8_t intfnum);
+void uart_init(HAL_BASE_t intfnum);
 
 /**@}*/ 
 
@@ -77,11 +77,11 @@ void uart_init(uint8_t intfnum);
  * @see uart_vprintf_buf()
  * @see uart_putc_buf()
  */
-static inline void uart_send_trigger(uint8_t intfnum);
+static inline void uart_send_trigger(HAL_BASE_t intfnum);
 
-static inline void uart_send_flush(uint8_t intfnum);
+static inline void uart_send_flush(HAL_BASE_t intfnum);
 
-static inline uint8_t uart_reqlock(uint8_t intfnum, uint8_t len, uint8_t token);
+static inline HAL_BASE_t uart_reqlock(HAL_BASE_t intfnum, HAL_BASE_t len, uint8_t token);
 
 /**
  * @brief TX buffer prep function - putchar
@@ -103,9 +103,9 @@ static inline uint8_t uart_reqlock(uint8_t intfnum, uint8_t len, uint8_t token);
  * 
  * @see uart_send_trigger()
  */
-static inline uint8_t uart_putc(uint8_t intfnum, uint8_t byte, uint8_t token, uint8_t handlelock);
+static inline HAL_BASE_t uart_putc(HAL_BASE_t intfnum, uint8_t byte, uint8_t token, HAL_BASE_t handlelock);
 
-static inline uint8_t uart_write(uint8_t intfnum, uint8_t *buffer, uint8_t len, uint8_t token);
+static inline HAL_BASE_t uart_write(HAL_BASE_t intfnum, uint8_t *buffer, HAL_BASE_t len, uint8_t token);
 
 /**
  * @brief TX buffer prep function - printf
@@ -133,7 +133,7 @@ static inline uint8_t uart_write(uint8_t intfnum, uint8_t *buffer, uint8_t len, 
  * 
  * @see uart_send_trigger()
  */
-uint8_t uart_vprintf(uint8_t intfnum, const char *format, ...);
+HAL_BASE_t uart_vprintf(HAL_BASE_t intfnum, const char *format, ...);
 
 
 /**
@@ -144,19 +144,13 @@ uint8_t uart_vprintf(uint8_t intfnum, const char *format, ...);
  * Get number of unread bytes in the specified UART interface's rxbuffer.
  * 
  */
-static inline uint8_t uart_population_rxb(uint8_t intfnum);
+static inline HAL_BASE_t uart_population_rxb(HAL_BASE_t intfnum);
 
-static inline void uart_discard_rxb(uint8_t intfnum);
+static inline void uart_discard_rxb(HAL_BASE_t intfnum);
 
-static inline uint8_t uart_getc(uint8_t intfnum);
+static inline uint8_t uart_getc(HAL_BASE_t intfnum);
 
-static inline uint8_t uart_read(uint8_t intfnum, uint8_t *buffer, uint8_t len);
-
-void _uart0_irqhandler(void);
-void _uart1_irqhandler(void);
-
-extern uint16_t * uart0_overrun_counter;
-extern uint16_t * uart1_overrun_counter;
+static inline HAL_BASE_t uart_read(HAL_BASE_t intfnum, uint8_t *buffer, HAL_BASE_t len);
 /**@}*/ 
 
 /**
@@ -178,7 +172,7 @@ extern uint16_t * uart1_overrun_counter;
  * the peripheral initialization may need to be changed to not enable 
  * interrupts.
  */
-static inline void uart_putc_bare(uint8_t intfnum, uint8_t byte);
+static inline void uart_putc_bare(HAL_BASE_t intfnum, uint8_t byte);
 
 /**
  * @brief Recieve a single character from the specified UART interface
@@ -196,7 +190,7 @@ static inline void uart_putc_bare(uint8_t intfnum, uint8_t byte);
  * 
  * @return Character recieved
  */
-static inline uint8_t uart_getc_bare(uint8_t intfnum);
+static inline uint8_t uart_getc_bare(HAL_BASE_t intfnum);
 /**@}*/ 
 
 #if uC_UART_PT_ENABLED
