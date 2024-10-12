@@ -5,7 +5,22 @@
 
 #include <stdint.h>
 #include <hal/constants/rtc.h>
-#include <time/time.h>
+
+#ifndef TM_REAL_t_DEFINED
+#define TM_REAL_t_DEFINED
+
+typedef struct TM_REAL_t{
+    uint8_t century;
+    uint8_t year;
+    uint8_t month;
+    uint8_t date;
+    uint8_t hours;
+    uint8_t minutes;
+    uint8_t seconds;
+    uint16_t millis; 
+} tm_real_t;
+
+#endif
 
 typedef struct RTC_STATE_t {
     RTC_ST_t state;
