@@ -83,6 +83,9 @@ static inline void uart_send_flush(HAL_BASE_t intfnum);
 
 static inline HAL_BASE_t uart_reqlock(HAL_BASE_t intfnum, HAL_BASE_t len, uint8_t token);
 
+static inline HAL_BASE_t uart_rellock(HAL_BASE_t intfnum, uint8_t token);
+
+
 /**
  * @brief TX buffer prep function - putchar
  * @param intfnum Identifier of the UART interface.
