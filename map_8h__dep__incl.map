@@ -1,6 +1,6 @@
 <map id="hal/uc/map.h" name="hal/uc/map.h">
 <area shape="rect" id="node1" title="HAL for uC Peripheral Map." alt="" coords="814,5,921,32"/>
-<area shape="rect" id="node2" href="$adc_8h.html" title="HAL for uC Internal ADC interfaces." alt="" coords="5,80,105,107"/>
+<area shape="rect" id="node2" href="$uc_2adc_8h.html" title="HAL for uC Internal ADC interfaces." alt="" coords="5,80,105,107"/>
 <area shape="rect" id="node3" href="$uc_2all_8h_source.html" title=" " alt="" coords="821,155,914,181"/>
 <area shape="rect" id="node5" href="$core_8h.html" title="HAL for uC Core peripherals." alt="" coords="181,80,287,107"/>
 <area shape="rect" id="node6" href="$uc_2crypto_8h_source.html" title=" " alt="" coords="311,80,429,107"/>

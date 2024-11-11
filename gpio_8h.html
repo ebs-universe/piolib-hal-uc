@@ -94,7 +94,6 @@ $(document).ready(function(){initNavTree('gpio_8h.html',''); initResizable(); })
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;platform/types.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
-<code>#include &lt;hal_platform/gpio_impl.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for gpio.h:</div>
 <div class="dyncontent">
@@ -109,90 +108,18 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 </div>
 <p><a href="gpio_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">GPIO Configuration API Functions</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Various functions to configure the uC GPIOs.</p>
-<p>The following common notes apply to all the GPIO API sections.</p>
-<p>Pin number(s) is to be provided as:</p><ul>
-<li>a mask for platforms with simple GPIO interfaces.</li>
-<li>an integer for platforms with complex GPIO interfaces with multi-bit registers.</li>
-</ul>
-<p>Note that when provided as an integer, functions can only operate on a single pin at a time. In such cases, the platform probably provides a way to execute atomic multiple pin changes. The platform's library or registers should be used directly in such cases.</p>
-<p>The following implementations expect a mask:</p><ul>
-<li>AVR</li>
-<li>MSP430</li>
-</ul>
-<p>The following implementations expect an integer:</p><ul>
-<li>STM32F4 </li>
-</ul>
-</div></td></tr>
-<tr class="memitem:afdbe206b3c49f019757ab09b3cf52b9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpio_8h.html#afdbe206b3c49f019757ab09b3cf52b9c">gpio_init</a> (void)</td></tr>
-<tr class="memdesc:afdbe206b3c49f019757ab09b3cf52b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the GPIO peripherals.  <a href="gpio_8h.html#afdbe206b3c49f019757ab09b3cf52b9c">More...</a><br /></td></tr>
-<tr class="separator:afdbe206b3c49f019757ab09b3cf52b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">GPIO Interaction API Functions</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Various functions to interact with uC GPIOs </p>
-</div></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">GPIO Interrupt Related API Functions</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp1afc1935c9b4771e8c218e3d50bc82f8"></a>Various functions to configure and manage interrupts for uC GPIOs.</p>
-<p>Note that GPIO interrupts take many different forms on different platforms. The underlying implementation should take a reasonable least common denominator approach to provide a basic interface to the most common configurations.</p>
-<p>Applications must also take care to ensure that interrupts requested here are actually present and viable, and that there are no hardware conflicts it creates. </p>
-</td></tr>
-<tr class="memitem:a652c2fac5bca58e6207d6c327171582e"><td class="memItemLeft" align="right" valign="top"><a id="a652c2fac5bca58e6207d6c327171582e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_INT_EDGE_NONE</b>&#160;&#160;&#160;0x00</td></tr>
-<tr class="separator:a652c2fac5bca58e6207d6c327171582e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed642a4e482f73aa917477370d0e241b"><td class="memItemLeft" align="right" valign="top"><a id="aed642a4e482f73aa917477370d0e241b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_INT_EDGE_RISING</b>&#160;&#160;&#160;0x01</td></tr>
-<tr class="separator:aed642a4e482f73aa917477370d0e241b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73bed10383a27d4a03feb300e64af8e8"><td class="memItemLeft" align="right" valign="top"><a id="a73bed10383a27d4a03feb300e64af8e8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_INT_EDGE_FALLING</b>&#160;&#160;&#160;0x10</td></tr>
-<tr class="separator:a73bed10383a27d4a03feb300e64af8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10fa307ab17d02819108165a09f8e08b"><td class="memItemLeft" align="right" valign="top"><a id="a10fa307ab17d02819108165a09f8e08b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_INT_EDGE_BOTH</b>&#160;&#160;&#160;0x11</td></tr>
-<tr class="separator:a10fa307ab17d02819108165a09f8e08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5cc8d5ba4508e8ec2232bae81add6e2"><td class="memItemLeft" align="right" valign="top"><a id="ae5cc8d5ba4508e8ec2232bae81add6e2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_INT_ON_RISING</b>&#160;&#160;&#160;0xF0</td></tr>
-<tr class="separator:ae5cc8d5ba4508e8ec2232bae81add6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a211239847faccf0a5bf65bf167ac5504"><td class="memItemLeft" align="right" valign="top"><a id="a211239847faccf0a5bf65bf167ac5504"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GPIO_INT_ON_FALLING</b>&#160;&#160;&#160;0x00</td></tr>
-<tr class="separator:a211239847faccf0a5bf65bf167ac5504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>HAL for uC GPIOs. </p>
 <p>This file is the hardware abstraction layer for uC GPIOs </p>
 
 <p class="definition">Definition in file <a class="el" href="gpio_8h_source.html">gpio.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="afdbe206b3c49f019757ab09b3cf52b9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdbe206b3c49f019757ab09b3cf52b9c">&#9670;&nbsp;</a></span>gpio_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gpio_init </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the GPIO peripherals. </p>
-<p>This is for common initialization for GPIO peripherals, such as enabling the GPIO clock on STM32 Cortex M processors. This will likely be empty for most other implementations. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_bd7daeaaa812801dff3000c33ca17751.html">uc</a></li><li class="navelem"><a class="el" href="gpio_8h.html">gpio.h</a></li>
-    <li class="footer">Generated on Fri Oct 18 2024 09:46:16 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Nov 11 2024 18:10:58 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

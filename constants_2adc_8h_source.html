@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ebs-hal-uc: hal/uc/adc.h File Reference</title>
+<title>ebs-hal-uc: hal/constants/adc.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('adc_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('constants_2adc_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,47 +86,33 @@ $(document).ready(function(){initNavTree('adc_8h.html',''); initResizable(); });
 
 <div class="header">
   <div class="headertitle">
-<div class="title">adc.h File Reference</div>  </div>
+<div class="title">adc.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>HAL for uC Internal ADC interfaces.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for adc.h:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="adc_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="adc_8h__dep__incl.svg" width="111" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-</div>
-<p><a href="adc_8h_source.html">Go to the source code of this file.</a></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>HAL for uC Internal ADC interfaces. </p>
-<p>This file is the hardware abstraction layer for uC internal ADC interfaces.</p>
-<p>The HAL API provided for ADCs follows a least-common-denominator approach. ADC features that are less common are not necessarily supported by the HAL, and must be directly used from the application layer. Over time, specialized ADC features which see common use <em>may</em> be included in the HAL, but no guarantees are made.</p>
-<p>Each internal ADC is considered a single Interface, and each interface may have one or more channels associated with it.</p>
-<p>The HAL ADC interface understands the following ADC elements, in one form or the other. Many of these parameters will be as preprocessor definitions provided by the uC support file.</p>
-<ul>
-<li>Number of channels</li>
-<li>Single shot conversion of a single channel</li>
-</ul>
-<p>Note that the typical ADC interface is fairly involved and has a great many options, making the HAL less useful for anything but the simplest or the most common approaches to ADC use. The implementations in the HAL can be extended when specific, clear cut use cases which are used widely enough to warrant continuous maintenance, but in the general case, if you want to do anything special with the ADC, you would probably have to do so from the application layer directly. </p>
-
-<p class="definition">Definition in file <a class="el" href="adc_8h_source.html">adc.h</a>.</p>
-</div></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef HAL_CONSTANTS_ADC_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define HAL_CONSTANTS_ADC_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#define ADC_MODE_DISABLED       0   </span><span class="comment">// ADC Disabled</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define ADC_MODE_SINGLE         1   </span><span class="comment">// Single Shot, Single Channel Conversion on trigger</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ADC_MODE_SCAN           2   </span><span class="comment">// Scan though all enabled ADC channels on trigger</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define ADC_MODE_CONTINUOUS     3   </span><span class="comment">// Continuous Scan though all enabled ADC channels ono trigger</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    _ADC_MODE_DISABLED = ADC_MODE_DISABLED,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    _ADC_MODE_SINGLE = ADC_MODE_SINGLE,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    _ADC_MODE_SCAN = ADC_MODE_SCAN,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    _ADC_MODE_CONTINUOUS = ADC_MODE_CONTINUOUS</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;} ADC_MODE_t;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_bd7daeaaa812801dff3000c33ca17751.html">uc</a></li><li class="navelem"><a class="el" href="adc_8h.html">adc.h</a></li>
-    <li class="footer">Generated on Fri Oct 18 2024 09:46:16 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_d2b7a96810b9669f8191cf27d0893188.html">constants</a></li><li class="navelem"><b>adc.h</b></li>
+    <li class="footer">Generated on Mon Nov 11 2024 18:10:58 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

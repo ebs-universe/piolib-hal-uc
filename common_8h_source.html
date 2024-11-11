@@ -102,14 +102,24 @@ $(document).ready(function(){initNavTree('common_8h_source.html',''); initResiza
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    _EBS_TRUE = EBS_TRUE</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;} EBS_BOOL_t;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define EBS_INTF_UART       0</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define EBS_INTF_USBCDC     1</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define EBS_INTF_APP        0xFE</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    _EBS_INTF_UART   = EBS_INTF_UART,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    _EBS_INTF_USBCDC = EBS_INTF_USBCDC,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _EBS_INTF_APP    = EBS_INTF_APP</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} EBS_INTF_TYPE_t;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_d2b7a96810b9669f8191cf27d0893188.html">constants</a></li><li class="navelem"><b>common.h</b></li>
-    <li class="footer">Generated on Fri Oct 18 2024 09:46:16 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Nov 11 2024 18:10:58 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

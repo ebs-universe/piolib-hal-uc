@@ -58,8 +58,8 @@ var sectionId = 'dynsection-0';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="HAL for uC GPIOs.">
-<polygon fill="#bfbfbf" stroke="black" points="318.5,-291.5 318.5,-310.5 397.5,-310.5 397.5,-291.5 318.5,-291.5"/>
-<text text-anchor="middle" x="358" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/gpio.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="117.5,-291.5 117.5,-310.5 196.5,-310.5 196.5,-291.5 117.5,-291.5"/>
+<text text-anchor="middle" x="157" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/gpio.h</text>
 </a>
 </g>
 </g>
@@ -75,7 +75,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M318.32,-295.72C225.11,-284.57 0,-250.79 0,-184.5 0,-184.5 0,-184.5 0,-121 0,-71.89 146.85,-37.04 231.91,-20.98"/>
+<path fill="none" stroke="midnightblue" d="M123.32,-291.49C77.19,-277.59 0,-245.24 0,-184.5 0,-184.5 0,-184.5 0,-121 0,-71.89 146.85,-37.04 231.91,-20.98"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="232.77,-24.38 241.96,-19.11 231.49,-17.5 232.77,-24.38"/>
 </g>
 <!-- Node3 -->
@@ -90,23 +90,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M358,-291.08C358,-284.01 358,-273.86 358,-264.99"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="361.5,-264.75 358,-254.75 354.5,-264.75 361.5,-264.75"/>
-</g>
-<!-- Node16 -->
-<g id="node16" class="node">
-<title>Node16</title>
-<g id="a_node16"><a xlink:title=" ">
-<polygon fill="none" stroke="#bfbfbf" points="399.5,-235.5 399.5,-254.5 538.5,-254.5 538.5,-235.5 399.5,-235.5"/>
-<text text-anchor="middle" x="469" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal_platform/gpio_impl.h</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node16 -->
-<g id="edge19" class="edge">
-<title>Node1&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M375.83,-291.32C393.72,-282.62 421.48,-269.12 442.05,-259.11"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="443.75,-262.18 451.21,-254.65 440.69,-255.88 443.75,-262.18"/>
+<path fill="none" stroke="midnightblue" d="M188.85,-291.44C225.88,-281.49 286.74,-265.15 324.47,-255.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="325.72,-258.3 334.46,-252.32 323.9,-251.54 325.72,-258.3"/>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge4" class="edge">
@@ -126,8 +111,8 @@ var sectionId = 'dynsection-0';
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M381.74,-237.22C384.52,-236.45 387.32,-235.7 390,-235 455.91,-217.77 484.01,-239.21 539,-199 599.57,-154.71 634.34,-67.57 647.22,-29.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="650.62,-30.36 650.39,-19.77 643.97,-28.19 650.62,-30.36"/>
+<path fill="none" stroke="midnightblue" d="M381.51,-243.71C418.51,-242.12 491.02,-234.33 539,-199 599.43,-154.51 634.28,-67.48 647.19,-29.48"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="650.59,-30.35 650.38,-19.75 643.94,-28.17 650.59,-30.35"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -156,8 +141,8 @@ var sectionId = 'dynsection-0';
 <!-- Node3&#45;&gt;Node12 -->
 <g id="edge15" class="edge">
 <title>Node3&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M381.68,-236.97C384.47,-236.25 387.29,-235.57 390,-235 500.26,-211.69 530.6,-221.65 641,-199 645.8,-198.02 650.8,-196.86 655.75,-195.63"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="656.92,-198.94 665.73,-193.05 655.17,-192.16 656.92,-198.94"/>
+<path fill="none" stroke="midnightblue" d="M381.63,-241.09C430.41,-234.91 545.63,-219.33 641,-199 645.74,-197.99 650.67,-196.82 655.56,-195.6"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="656.63,-198.94 665.43,-193.04 654.87,-192.16 656.63,-198.94"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">

@@ -66,7 +66,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="adc_8h.html" target="_top" xlink:title="HAL for uC Internal ADC interfaces.">
+<g id="a_node2"><a xlink:href="uc_2adc_8h.html" target="_top" xlink:title="HAL for uC Internal ADC interfaces.">
 <polygon fill="none" stroke="black" points="0,-112.5 0,-131.5 75,-131.5 75,-112.5 0,-112.5"/>
 <text text-anchor="middle" x="37.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/adc.h</text>
 </a>
