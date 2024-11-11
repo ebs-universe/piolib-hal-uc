@@ -34,9 +34,10 @@
  * Each internal ADC is considered a single Interface, and each interface may
  * have one or more channels associated with it. 
  * 
- * The HAL ADC interface understands the following ADC elements, in one form 
- * or the other. Many of these parameters will be as preprocessor definitions
- * provided by the uC support file.
+ * The HAL ADC interface understands the following ADC elements and features, 
+ * in one form or the other. Many of these parameters will be as preprocessor 
+ * definitions provided by the uC support file, and not all features may be 
+ * supported by each individual implementation.
  * 
  *  - Number of channels
  *  - Single shot conversion of a single channel
@@ -63,21 +64,27 @@
  * 
  */
 /**@{*/ 
-void adc_init(uint8_t intfnum);
+void adc_init();
 
-void adc_setup_channel(uint8_t intfnum, uint8_t chnum, uint16_t * rbuf);
+void adc_register_handler(HAL_BASE_t intfnum, void (*handler)(HAL_BASE_t, HAL_BASE_t, void *));
 
-void adc_trigger_single(uint8_t chnum);
+// void adc_set_sample_rate(HAL_BASE_t intfnum);
 
-// void adc_setup_autoscan(uint8_t intfnum, uint16_t chnmask);
+void adc_watchdog(void);
 
-// void adc_trigger_autoscan(void);
+void adc_enable_channel(HAL_BASE_t intfnum, HAL_BASE_t chnum);
 
+void adc_disable_channel(HAL_BASE_t intfnum, HAL_BASE_t chnum);
 
+void adc_trigger_single(HAL_BASE_t intfnum, HAL_BASE_t chnum);
+
+void adc_trigger_scan(HAL_BASE_t intfnum);
+
+void adc_trigger_autoscan(HAL_BASE_t intfnum);
 /**@}*/ 
 
 // Set up the implementation
-#include "uc/adc_impl.h"
+#include <hal_platform/adc_impl.h>
 
 #endif
 #endif
