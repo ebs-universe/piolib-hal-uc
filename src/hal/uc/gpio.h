@@ -32,6 +32,8 @@
 #include <platform/types.h>
 #include "map.h"
 
+#if uC_GPIO_ENABLED
+
 /**
  * @name GPIO Configuration API Functions
  * Various functions to configure the uC GPIOs.
@@ -71,16 +73,14 @@ void gpio_init(void);
  * @param port Port number
  * @param pin Pin number(s)
  */
-static inline void gpio_conf_output(PORTSELECTOR_t port,
-                                    PINSELECTOR_t  pin);
+void gpio_conf_output(PORTSELECTOR_t port, PINSELECTOR_t  pin);
 
 /** 
  * @brief Configure pin / pins as input.
  * @param port Port number
  * @param pin Pin number(s)
  */
-static inline void gpio_conf_input(PORTSELECTOR_t port,
-                                   PINSELECTOR_t pin);
+void gpio_conf_input(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
  * @brief Configure pin / pins for peripheral's use.
@@ -90,9 +90,7 @@ static inline void gpio_conf_input(PORTSELECTOR_t port,
  *               the pin is to be used as an input or output. The remaining 7 bits are 
  *               reserved for use in devices which allow configurable peripheral use. 
  */
-static inline void gpio_conf_periph(PORTSELECTOR_t port,
-                                    PINSELECTOR_t pin,
-                                    uint8_t periph);
+void gpio_conf_periph(PORTSELECTOR_t port, PINSELECTOR_t pin, uint8_t periph);
 
 /** 
  * @brief Configure pin / pins for analog use.
@@ -103,32 +101,28 @@ static inline void gpio_conf_periph(PORTSELECTOR_t port,
  * @param port Port number
  * @param pin Pin number(s)
  */
-static inline void gpio_conf_analog(
-    PORTSELECTOR_t port, PINSELECTOR_t pin);
+void gpio_conf_analog(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
  * @brief Configure pullup on pin / pins.
  * @param port Port number
  * @param pin Pin number(s)
  */
-static inline void gpio_conf_pullup(PORTSELECTOR_t port,
-                                    PINSELECTOR_t pin);
+void gpio_conf_pullup(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
  * @brief Configure pin / pins for input with pulldown.
  * @param port Port number
  * @param pin Pin number(s)
  */
-static inline void gpio_conf_pulldown(PORTSELECTOR_t port,
-                                      PINSELECTOR_t pin);
+void gpio_conf_pulldown(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
  * @brief Configure pin / pins for high impedance input.
  * @param port Port number
  * @param pin Pin number(s)
  */
-static inline void gpio_conf_hiz(PORTSELECTOR_t port,
-                                 PINSELECTOR_t pin);
+void gpio_conf_hiz(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
  * @brief Configure pin / pins for Push-Pull output mode.
@@ -138,8 +132,7 @@ static inline void gpio_conf_hiz(PORTSELECTOR_t port,
  * @param port Port number
  * @param pin Pin number(s)
  */
-static inline void gpio_conf_outmode_pp(
-    PORTSELECTOR_t port, PINSELECTOR_t pin); 
+void gpio_conf_outmode_pp(PORTSELECTOR_t port, PINSELECTOR_t pin); 
 
 
 /** 
@@ -150,8 +143,10 @@ static inline void gpio_conf_outmode_pp(
  * @param port Port number
  * @param pin Pin number(s)
  */
-static inline void gpio_conf_outmode_od(
-    PORTSELECTOR_t port, PINSELECTOR_t pin); 
+void gpio_conf_outmode_od(PORTSELECTOR_t port, PINSELECTOR_t pin); 
+
+
+void gpio_conf_speed(PORTSELECTOR_t port, PINSELECTOR_t pin, uint8_t speed);
 /**@}*/
 
 /**
@@ -241,8 +236,7 @@ static inline HAL_BASE_t gpio_get_input(PORTSELECTOR_t port,
  * @param pin Pin number
  * @param edge The edge on which the interrupt should fire.
  */
-static inline void gpio_conf_interrupt(
-    PORTSELECTOR_t port, PINSELECTOR_t pin, HAL_BASE_t edge);
+void gpio_conf_interrupt(PORTSELECTOR_t port, PINSELECTOR_t pin, HAL_BASE_t edge);
 
 /** 
  * @brief Install the provided function as an interrupt handler for the pin. 
@@ -252,9 +246,9 @@ static inline void gpio_conf_interrupt(
  * other EBS HAL functions.
  * 
  * Note that the provided function will be called from an interrupt context. 
- * Also, in the case of GPIO interrupts, we are already one or two function 
- * calls deep inside the interrupt. If this function is used, try to keep 
- * the handler function as small as possible.
+ * Also, in the case of GPIO interrupts, we might already be one or two 
+ * function calls deep inside the interrupt. If this function is used, try 
+ * to keep the handler function as small as possible.
  * 
  * Some platforms may choose to provide a more optimal way of providing this 
  * functionality, such as an inlinable function accepted as a #define. Check 
@@ -274,8 +268,7 @@ static inline void gpio_conf_interrupt(
  * @param pin Pin number
  * @param handler Interrupt handler function
  */
-static inline void gpio_conf_interrupt_handler(
-    PORTSELECTOR_t port, PINSELECTOR_t pin, void (*handler)(uint8_t));
+void gpio_conf_interrupt_handler(PORTSELECTOR_t port, PINSELECTOR_t pin, void (*handler)(uint8_t));
 
 /** 
  * @brief Arm the Pin Change Interrupt
@@ -287,8 +280,7 @@ static inline void gpio_conf_interrupt_handler(
  * @param port Port number
  * @param pin Pin number
  */
-static inline void gpio_interrupt_arm(
-    PORTSELECTOR_t port, PINSELECTOR_t pin);
+void gpio_interrupt_arm(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
  * @brief Disarm the Pin Change Interrupt
@@ -300,13 +292,12 @@ static inline void gpio_interrupt_arm(
  * @param port Port number
  * @param pin Pin number
  */
-static inline void gpio_interrupt_disarm(
-    PORTSELECTOR_t port, PINSELECTOR_t pin);
+void gpio_interrupt_disarm(PORTSELECTOR_t port, PINSELECTOR_t pin);
 /**@}*/
-
 
 // Set up the implentation
 #include <hal_platform/gpio_impl.h>
 
+#endif
 #endif
 
