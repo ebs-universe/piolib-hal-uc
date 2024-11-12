@@ -66,7 +66,9 @@
 /**@{*/ 
 void adc_init();
 
-void adc_register_handler(HAL_BASE_t intfnum, void (*handler)(HAL_BASE_t, HAL_BASE_t, void *));
+void adc_install_eoc_handler(HAL_BASE_t intfnum, void (*handler)(HAL_BASE_t, void *));
+
+void adc_install_eos_handler(HAL_BASE_t intfnum, void (*handler)(void));
 
 // void adc_set_sample_rate(HAL_BASE_t intfnum);
 
