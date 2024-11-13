@@ -72,7 +72,7 @@ void adc_install_eos_handler(HAL_BASE_t intfnum, void (*handler)(void));
 
 // void adc_set_sample_rate(HAL_BASE_t intfnum);
 
-void adc_watchdog(void);
+void adc_poll(void);
 
 void adc_enable_channel(HAL_BASE_t intfnum, HAL_BASE_t chnum);
 
