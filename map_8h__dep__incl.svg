@@ -216,7 +216,7 @@ var sectionId = 'dynsection-1';
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="timer_8h.html" target="_top" xlink:title="HAL for uC Timers.">
+<g id="a_node13"><a xlink:href="uc_2timer_8h.html" target="_top" xlink:title="HAL for uC Timers.">
 <polygon fill="none" stroke="black" points="924,-112.5 924,-131.5 1007,-131.5 1007,-112.5 924,-112.5"/>
 <text text-anchor="middle" x="965.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/timer.h</text>
 </a>
