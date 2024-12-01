@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ebs-hal-uc: hal/uc/crypto.h Source File</title>
+<title>ebs-hal-uc: hal/uc/dma.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('uc_2crypto_8h_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('dma_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,12 +86,12 @@ $(document).ready(function(){initNavTree('uc_2crypto_8h_source.html',''); initRe
 
 <div class="header">
   <div class="headertitle">
-<div class="title">crypto.h</div>  </div>
+<div class="title">dma.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
+<a href="dma_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* </span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (c)</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   (c) 2024 Chintalagiri Shashank, Quazar Technologies Pvt. Ltd.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *   (c) 2024 Chintalagiri Shashank</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  </span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This file is part of</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Embedded bootstraps : hal-uC</span></div>
@@ -110,50 +110,26 @@ $(document).ready(function(){initNavTree('uc_2crypto_8h_source.html',''); initRe
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#ifndef HAL_UC_AES_H</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define HAL_UC_AES_H</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="map_8h.html">map.h</a>&quot;</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#if uC_CRYPTO_ENABLED</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> crypto_init(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;uint8_t crypto_set_ctx(<a class="code" href="struct_c_r_y_p_t_o___c_t_x__t.html">crypto_ctx_t</a> *<span class="keyword">const</span> ctx, CRYPTO_CTX_MODE_t mode, </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                       uint8_t (*ingest_cb)(<a class="code" href="struct_c_r_y_p_t_o___c_t_x__t.html">crypto_ctx_t</a> *<span class="keyword">const</span>, uint8_t));</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;uint8_t crypto_set_ctx_phase(<a class="code" href="struct_c_r_y_p_t_o___c_t_x__t.html">crypto_ctx_t</a> * ctx, CRYPTO_CTX_PHASE_t phase);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keywordtype">void</span> crypto_reset_ctx(<a class="code" href="struct_c_r_y_p_t_o___c_t_x__t.html">crypto_ctx_t</a> * ctx);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;uint8_t crypto_apply_profile(</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t.html">crypto_profile_t</a> *<span class="keyword">const</span> profile, </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    CRYPTO_CTX_MODE_t mode, </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    CRYPTO_CTX_PHASE_t phase</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;uint8_t crypto_trigger_transaction(<a class="code" href="struct_c_r_y_p_t_o___t_r_a_n_s_a_c_t_i_o_n__t.html">crypto_transaction_t</a> *<span class="keyword">const</span> transaction);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;uint8_t crypto_ingest(<span class="keywordtype">void</span> * data, uint8_t nvbytes, uint8_t override_busy);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keywordtype">void</span> crypto_egest(<span class="keywordtype">void</span> * data, uint8_t length);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">// Set up the implementation</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#include &lt;hal_platform/crypto_impl.h&gt;</span> </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#ifndef HAL_UC_DMA_H</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define HAL_UC_DMA_H</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="map_8h.html">map.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#if uC_DMA_ENABLED</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">// Set up the implementation</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;hal_platform/dma_handlers.h&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;hal_platform/dma_impl.h&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="amap_8h_html"><div class="ttname"><a href="map_8h.html">map.h</a></div><div class="ttdoc">HAL for uC Peripheral Map.</div></div>
-<div class="ttc" id="astruct_c_r_y_p_t_o___c_t_x__t_html"><div class="ttname"><a href="struct_c_r_y_p_t_o___c_t_x__t.html">CRYPTO_CTX_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_2crypto_8h_source.html#l00022">crypto.h:22</a></div></div>
-<div class="ttc" id="astruct_c_r_y_p_t_o___p_r_o_f_i_l_e__t_html"><div class="ttname"><a href="struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t.html">CRYPTO_PROFILE_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_2crypto_8h_source.html#l00009">crypto.h:9</a></div></div>
-<div class="ttc" id="astruct_c_r_y_p_t_o___t_r_a_n_s_a_c_t_i_o_n__t_html"><div class="ttname"><a href="struct_c_r_y_p_t_o___t_r_a_n_s_a_c_t_i_o_n__t.html">CRYPTO_TRANSACTION_t</a></div><div class="ttdef"><b>Definition:</b> <a href="types_2crypto_8h_source.html#l00030">crypto.h:30</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_bd7daeaaa812801dff3000c33ca17751.html">uc</a></li><li class="navelem"><b>crypto.h</b></li>
+    <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_bd7daeaaa812801dff3000c33ca17751.html">uc</a></li><li class="navelem"><a class="el" href="dma_8h.html">dma.h</a></li>
     <li class="footer">Generated on Sun Dec 1 2024 08:07:38 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
