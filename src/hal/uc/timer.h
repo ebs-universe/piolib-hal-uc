@@ -53,46 +53,46 @@
  */
 
 // Initialize timer clock source, default prescaler.
-static inline void timer_init(uint8_t intfnum);
+static inline void timer_init(HAL_BASE_t intfnum);
 
 // Change timer prescaler.
-static inline void timer_set_prescaler(uint8_t intfnum, uint16_t prescaler);
+static inline void timer_set_prescaler(HAL_BASE_t intfnum, uint16_t prescaler);
 
 // Start the timer in the provided mode. 
-static inline void timer_set_mode(uint8_t intfnum, uint8_t mode);
+static inline void timer_set_mode(HAL_BASE_t intfnum, TIMER_MODE_t mode);
 
 // Enable the timer overflow interrupt.
-static inline void timer_enable_int_overflow(uint8_t intfnum);
+static inline void timer_enable_int_overflow(HAL_BASE_t intfnum);
 
 // Disable the timer overflow interrupt.
-static inline void timer_disable_int_overflow(uint8_t intfnum);
+static inline void timer_disable_int_overflow(HAL_BASE_t intfnum);
 
 // Enable the timer top interrupt.
-static inline void timer_enable_int_top(uint8_t intfnum);
+static inline void timer_enable_int_top(HAL_BASE_t intfnum);
 
 // Disable the timer top interrupt.
-static inline void timer_disable_int_top(uint8_t intfnum);
+static inline void timer_disable_int_top(HAL_BASE_t intfnum);
 
 // Set TOP for the timer.
-static inline void timer_set_top(uint8_t intfnum, uint16_t top);
+static inline void timer_set_top(HAL_BASE_t intfnum, HAL_BASE_t top);
 
 // Get TOP for the timer.
-static inline uint16_t timer_get_top(uint8_t intfnum);
+static inline HAL_BASE_t timer_get_top(HAL_BASE_t intfnum);
 
 // Set output mode for the timer channel.
-static inline void timer_set_outmode_ch( uint8_t intfnum, uint8_t channel, uint8_t outmode);
+static inline void timer_set_outmode_ch(HAL_BASE_t intfnum, HAL_BASE_t channel, TIMER_OUTMODE_t outmode);
 
 // Enable the compare match interrupt for the timer channel.
-static inline void timer_enable_int_ch ( uint8_t intfnum, uint8_t channel);
+static inline void timer_enable_int_ch (HAL_BASE_t intfnum, HAL_BASE_t channel);
 
 // Disable the compare match interrupt for the timer channel.
-static inline void timer_disable_int_ch( uint8_t intfnum, uint8_t channel);
+static inline void timer_disable_int_ch(HAL_BASE_t intfnum, HAL_BASE_t channel);
 
 // Set the channel compare match value.
-static inline void timer_set_cmr_ch(uint8_t intfnum, uint8_t channel, uint16_t cm);
+static inline void timer_set_cmr_ch(HAL_BASE_t intfnum, HAL_BASE_t channel, uC_TIMER_CCR_t cm);
 
 // Get the channel compare match value.
-static inline uint16_t timer_get_cmr_ch(uint8_t intfnum, uint8_t channel);
+static inline uC_TIMER_CCR_t timer_get_cmr_ch(HAL_BASE_t intfnum, HAL_BASE_t channel);
 
 #include "hal_platform/timer_impl.h"
 #include "hal_platform/timer_handlers.h"
