@@ -81,7 +81,7 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="uc_2all_8h_source.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="uc_2all_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="710.5,-56.5 710.5,-75.5 780.5,-75.5 780.5,-56.5 710.5,-56.5"/>
 <text text-anchor="middle" x="745.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/all.h</text>
 </a>
@@ -111,7 +111,7 @@ var sectionId = 'dynsection-1';
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="uc_2crypto_8h_source.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="uc_2crypto_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="229,-112.5 229,-131.5 318,-131.5 318,-112.5 229,-112.5"/>
 <text text-anchor="middle" x="273.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/crypto.h</text>
 </a>
@@ -246,7 +246,7 @@ var sectionId = 'dynsection-1';
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="uc_2uart_8h_source.html" target="_top" xlink:title=" ">
+<g id="a_node15"><a xlink:href="uc_2uart_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="1124,-112.5 1124,-131.5 1201,-131.5 1201,-112.5 1124,-112.5"/>
 <text text-anchor="middle" x="1162.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/uart.h</text>
 </a>
@@ -297,7 +297,7 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="uc_8h_source.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="uc_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="718,-0.5 718,-19.5 773,-19.5 773,-0.5 718,-0.5"/>
 <text text-anchor="middle" x="745.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc.h</text>
 </a>

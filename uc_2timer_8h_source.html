@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('uc_2timer_8h_source.html',''); initRes
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> timer_set_prescaler(HAL_BASE_t intfnum, uint16_t prescaler);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// Start the timer in the provided mode. </span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> timer_set_mode(HAL_BASE_t intfnum, TIMER_MODE_t mode);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> timer_set_mode(HAL_BASE_t intfnum, <a class="code" href="constants_2timer_8h.html#ac8f174de48c27cedd687422e09c579a7">TIMER_MODE_t</a> mode);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// Enable the timer overflow interrupt.</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> timer_enable_int_overflow(HAL_BASE_t intfnum);</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('uc_2timer_8h_source.html',''); initRes
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> HAL_BASE_t timer_get_top(HAL_BASE_t intfnum);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// Set output mode for the timer channel.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> timer_set_outmode_ch(HAL_BASE_t intfnum, HAL_BASE_t channel, TIMER_OUTMODE_t outmode);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> timer_set_outmode_ch(HAL_BASE_t intfnum, HAL_BASE_t channel, <a class="code" href="constants_2timer_8h.html#afc5de1e127b230c9ada1ed26db991c23">TIMER_OUTMODE_t</a> outmode);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">// Enable the compare match interrupt for the timer channel.</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> timer_enable_int_ch (HAL_BASE_t intfnum, HAL_BASE_t channel);</div>
@@ -182,6 +182,8 @@ $(document).ready(function(){initNavTree('uc_2timer_8h_source.html',''); initRes
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#include &quot;hal_platform/timer_handlers.h&quot;</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aconstants_2timer_8h_html_ac8f174de48c27cedd687422e09c579a7"><div class="ttname"><a href="constants_2timer_8h.html#ac8f174de48c27cedd687422e09c579a7">TIMER_MODE_t</a></div><div class="ttdeci">TIMER_MODE_t</div><div class="ttdef"><b>Definition:</b> <a href="constants_2timer_8h_source.html#l00010">timer.h:10</a></div></div>
+<div class="ttc" id="aconstants_2timer_8h_html_afc5de1e127b230c9ada1ed26db991c23"><div class="ttname"><a href="constants_2timer_8h.html#afc5de1e127b230c9ada1ed26db991c23">TIMER_OUTMODE_t</a></div><div class="ttdeci">TIMER_OUTMODE_t</div><div class="ttdef"><b>Definition:</b> <a href="constants_2timer_8h_source.html#l00023">timer.h:23</a></div></div>
 <div class="ttc" id="amap_8h_html"><div class="ttname"><a href="map_8h.html">map.h</a></div><div class="ttdoc">HAL for uC Peripheral Map.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -189,7 +191,7 @@ $(document).ready(function(){initNavTree('uc_2timer_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_bd7daeaaa812801dff3000c33ca17751.html">uc</a></li><li class="navelem"><a class="el" href="uc_2timer_8h.html">timer.h</a></li>
-    <li class="footer">Generated on Sun Dec 1 2024 08:07:38 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Dec 9 2024 08:08:04 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

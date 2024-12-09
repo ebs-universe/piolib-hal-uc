@@ -1,5 +1,5 @@
 <map id="hal/uc/usb.h" name="hal/uc/usb.h">
 <area shape="rect" id="node1" title="HAL for USB interface." alt="" coords="5,5,105,32"/>
-<area shape="rect" id="node2" href="$uc_2all_8h_source.html" title=" " alt="" coords="9,80,102,107"/>
-<area shape="rect" id="node3" href="$uc_8h_source.html" title=" " alt="" coords="19,155,92,181"/>
+<area shape="rect" id="node2" href="$uc_2all_8h.html" title=" " alt="" coords="9,80,102,107"/>
+<area shape="rect" id="node3" href="$uc_8h.html" title=" " alt="" coords="19,155,92,181"/>
 </map>

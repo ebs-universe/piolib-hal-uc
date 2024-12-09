@@ -1,0 +1,66 @@
+digraph "hal/constants/rtc.h"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="hal/constants/rtc.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="hal/constants/all.h",height=0.2,width=0.4,color="black",URL="$constants_2all_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="hal/constants.h",height=0.2,width=0.4,color="black",URL="$constants_8h.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="hal/types/rtc.h",height=0.2,width=0.4,color="black",URL="$types_2rtc_8h.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="hal/types/all.h",height=0.2,width=0.4,color="black",URL="$types_2all_8h.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="hal/types.h",height=0.2,width=0.4,color="black",URL="$types_8h.html",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="hal/uc/map.h",height=0.2,width=0.4,color="black",URL="$map_8h.html",tooltip="HAL for uC Peripheral Map."];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="hal/uc/adc.h",height=0.2,width=0.4,color="black",URL="$uc_2adc_8h.html",tooltip="HAL for uC Internal ADC interfaces."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="hal/uc/all.h",height=0.2,width=0.4,color="black",URL="$uc_2all_8h.html",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="hal/uc.h",height=0.2,width=0.4,color="black",URL="$uc_8h.html",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="hal/uc/core.h",height=0.2,width=0.4,color="black",URL="$core_8h.html",tooltip="HAL for uC Core peripherals."];
+  Node11 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="hal/uc/crypto.h",height=0.2,width=0.4,color="black",URL="$uc_2crypto_8h.html",tooltip=" "];
+  Node12 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="hal/uc/dma.h",height=0.2,width=0.4,color="black",URL="$dma_8h.html",tooltip="HAL for DMA."];
+  Node7 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="hal/uc/eeprom.h",height=0.2,width=0.4,color="black",URL="$eeprom_8h.html",tooltip="HAL for uC EEPROM peripherals."];
+  Node14 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="hal/uc/entropy.h",height=0.2,width=0.4,color="black",URL="$entropy_8h.html",tooltip="HAL for uC entropy source."];
+  Node15 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="hal/uc/gpio.h",height=0.2,width=0.4,color="black",URL="$gpio_8h.html",tooltip="HAL for uC GPIOs."];
+  Node16 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="hal/uc/id.h",height=0.2,width=0.4,color="black",URL="$id_8h.html",tooltip="HAL for uC ID."];
+  Node17 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="hal/uc/rtc.h",height=0.2,width=0.4,color="black",URL="$uc_2rtc_8h.html",tooltip="HAL for uC RTCs."];
+  Node18 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="hal/uc/spi.h",height=0.2,width=0.4,color="black",URL="$spi_8h.html",tooltip="HAL for SPI interfaces."];
+  Node19 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="hal/uc/timer.h",height=0.2,width=0.4,color="black",URL="$uc_2timer_8h.html",tooltip="HAL for uC Timers."];
+  Node20 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="hal/uc/uart.h",height=0.2,width=0.4,color="black",URL="$uc_2uart_8h.html",tooltip=" "];
+  Node21 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="hal/uc/usb.h",height=0.2,width=0.4,color="black",URL="$usb_8h.html",tooltip="HAL for USB interface."];
+  Node22 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="hal/uc/usbcdc.h",height=0.2,width=0.4,color="black",URL="$usbcdc_8h.html",tooltip="HAL for USB CDC interface."];
+  Node23 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

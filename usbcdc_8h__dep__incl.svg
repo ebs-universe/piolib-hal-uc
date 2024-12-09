@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="uc_2all_8h_source.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="uc_2all_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="11,-56.5 11,-75.5 81,-75.5 81,-56.5 11,-56.5"/>
 <text text-anchor="middle" x="46" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/all.h</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="uc_8h_source.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="uc_8h.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="18.5,-0.5 18.5,-19.5 73.5,-19.5 73.5,-0.5 18.5,-0.5"/>
 <text text-anchor="middle" x="46" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc.h</text>
 </a>

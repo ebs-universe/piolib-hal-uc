@@ -1,0 +1,12 @@
+digraph "hal/types" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_52c912f73dac9c4c0e442232e1b2bd80 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="hal" fontname="Helvetica", fontsize="10", URL="dir_52c912f73dac9c4c0e442232e1b2bd80.html"]
+  dir_d2b7a96810b9669f8191cf27d0893188 [shape=box label="constants" URL="dir_d2b7a96810b9669f8191cf27d0893188.html"];
+  dir_00915aefc8fe3fced465a5d8ad3261ce [shape=box, label="types", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_00915aefc8fe3fced465a5d8ad3261ce.html"];
+  }
+  dir_00915aefc8fe3fced465a5d8ad3261ce->dir_d2b7a96810b9669f8191cf27d0893188 [headlabel="2", labeldistance=1.5 headhref="dir_000003_000001.html"];
+}

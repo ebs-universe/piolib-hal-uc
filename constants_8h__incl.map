@@ -1,0 +1,10 @@
+<map id="hal/constants.h" name="hal/constants.h">
+<area shape="rect" id="node1" title=" " alt="" coords="223,5,345,32"/>
+<area shape="rect" id="node2" href="$constants_2all_8h.html" title=" " alt="" coords="225,80,343,107"/>
+<area shape="rect" id="node3" href="$common_8h.html" title=" " alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node4" href="$constants_2crypto_8h.html" title=" " alt="" coords="120,155,195,181"/>
+<area shape="rect" id="node5" href="$constants_2rtc_8h.html" title=" " alt="" coords="219,155,269,181"/>
+<area shape="rect" id="node6" href="$constants_2uart_8h.html" title=" " alt="" coords="294,155,354,181"/>
+<area shape="rect" id="node7" href="$constants_2adc_8h.html" title=" " alt="" coords="378,155,435,181"/>
+<area shape="rect" id="node8" href="$constants_2timer_8h.html" title=" " alt="" coords="459,155,527,181"/>
+</map>

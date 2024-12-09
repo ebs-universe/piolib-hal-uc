@@ -89,37 +89,49 @@ $(document).ready(function(){initNavTree('common_8h_source.html',''); initResiza
 <div class="title">common.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="common_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef HAL_CONSTANTS_COMMON_H</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define HAL_CONSTANTS_COMMON_H</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define EBS_FALSE  0</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define EBS_TRUE   1</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="common_8h.html#a0b8060081806f7c1e37a7bd80ad59aac">    6</a></span>&#160;<span class="preprocessor">#define EBS_FALSE  0</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="common_8h.html#ad4ded4cfac13a65056e5397c3717e787">    7</a></span>&#160;<span class="preprocessor">#define EBS_TRUE   1</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    _EBS_FALSE = EBS_FALSE,</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    _EBS_TRUE = EBS_TRUE</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;} EBS_BOOL_t;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9">    9</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9ac2a8da5efcae094769cde66f470536aa">   10</a></span>&#160;    <a class="code" href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9ac2a8da5efcae094769cde66f470536aa">_EBS_FALSE</a> = <a class="code" href="common_8h.html#a0b8060081806f7c1e37a7bd80ad59aac">EBS_FALSE</a>,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9afa24c8e6798497577229d8fef462d352">_EBS_TRUE</a> = <a class="code" href="common_8h.html#ad4ded4cfac13a65056e5397c3717e787">EBS_TRUE</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9afa24c8e6798497577229d8fef462d352">   12</a></span>&#160;} <a class="code" href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9">EBS_BOOL_t</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define EBS_INTF_UART       0</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define EBS_INTF_USBCDC     1</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define EBS_INTF_APP        0xFE</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="common_8h.html#a7fe1e1e06e647ce53b2987d3d58714e0">   14</a></span>&#160;<span class="preprocessor">#define EBS_INTF_UART       0</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="common_8h.html#a3cb44b23deda926c2d769a0f318e9b00">   15</a></span>&#160;<span class="preprocessor">#define EBS_INTF_USBCDC     1</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="common_8h.html#a573463ba0bbd03be90f06c61be14cfd8">   16</a></span>&#160;<span class="preprocessor">#define EBS_INTF_APP        0xFE</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    _EBS_INTF_UART   = EBS_INTF_UART,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    _EBS_INTF_USBCDC = EBS_INTF_USBCDC,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _EBS_INTF_APP    = EBS_INTF_APP</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} EBS_INTF_TYPE_t;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="common_8h.html#a63a7afe893fb15355e18cddf5326b812">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="common_8h.html#a63a7afe893fb15355e18cddf5326b812a0b8b5fd36d8b78ffd6749d98dcb35ecc">   19</a></span>&#160;    <a class="code" href="common_8h.html#a63a7afe893fb15355e18cddf5326b812a0b8b5fd36d8b78ffd6749d98dcb35ecc">_EBS_INTF_UART</a>   = <a class="code" href="common_8h.html#a7fe1e1e06e647ce53b2987d3d58714e0">EBS_INTF_UART</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="common_8h.html#a63a7afe893fb15355e18cddf5326b812ab38857c4e0e8d79f04e0d8e6b1949c06">   20</a></span>&#160;    <a class="code" href="common_8h.html#a63a7afe893fb15355e18cddf5326b812ab38857c4e0e8d79f04e0d8e6b1949c06">_EBS_INTF_USBCDC</a> = <a class="code" href="common_8h.html#a3cb44b23deda926c2d769a0f318e9b00">EBS_INTF_USBCDC</a>,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="common_8h.html#a63a7afe893fb15355e18cddf5326b812a4b8aeaa23ee8c745193800f06ec469f2">_EBS_INTF_APP</a>    = <a class="code" href="common_8h.html#a573463ba0bbd03be90f06c61be14cfd8">EBS_INTF_APP</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="common_8h.html#a63a7afe893fb15355e18cddf5326b812a4b8aeaa23ee8c745193800f06ec469f2">   22</a></span>&#160;} <a class="code" href="common_8h.html#a63a7afe893fb15355e18cddf5326b812">EBS_INTF_TYPE_t</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acommon_8h_html_a0b8060081806f7c1e37a7bd80ad59aac"><div class="ttname"><a href="common_8h.html#a0b8060081806f7c1e37a7bd80ad59aac">EBS_FALSE</a></div><div class="ttdeci">#define EBS_FALSE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00006">common.h:6</a></div></div>
+<div class="ttc" id="acommon_8h_html_a3cb44b23deda926c2d769a0f318e9b00"><div class="ttname"><a href="common_8h.html#a3cb44b23deda926c2d769a0f318e9b00">EBS_INTF_USBCDC</a></div><div class="ttdeci">#define EBS_INTF_USBCDC</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00015">common.h:15</a></div></div>
+<div class="ttc" id="acommon_8h_html_a573463ba0bbd03be90f06c61be14cfd8"><div class="ttname"><a href="common_8h.html#a573463ba0bbd03be90f06c61be14cfd8">EBS_INTF_APP</a></div><div class="ttdeci">#define EBS_INTF_APP</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00016">common.h:16</a></div></div>
+<div class="ttc" id="acommon_8h_html_a63a7afe893fb15355e18cddf5326b812"><div class="ttname"><a href="common_8h.html#a63a7afe893fb15355e18cddf5326b812">EBS_INTF_TYPE_t</a></div><div class="ttdeci">EBS_INTF_TYPE_t</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00018">common.h:18</a></div></div>
+<div class="ttc" id="acommon_8h_html_a63a7afe893fb15355e18cddf5326b812a0b8b5fd36d8b78ffd6749d98dcb35ecc"><div class="ttname"><a href="common_8h.html#a63a7afe893fb15355e18cddf5326b812a0b8b5fd36d8b78ffd6749d98dcb35ecc">_EBS_INTF_UART</a></div><div class="ttdeci">@ _EBS_INTF_UART</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00019">common.h:19</a></div></div>
+<div class="ttc" id="acommon_8h_html_a63a7afe893fb15355e18cddf5326b812a4b8aeaa23ee8c745193800f06ec469f2"><div class="ttname"><a href="common_8h.html#a63a7afe893fb15355e18cddf5326b812a4b8aeaa23ee8c745193800f06ec469f2">_EBS_INTF_APP</a></div><div class="ttdeci">@ _EBS_INTF_APP</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00022">common.h:21</a></div></div>
+<div class="ttc" id="acommon_8h_html_a63a7afe893fb15355e18cddf5326b812ab38857c4e0e8d79f04e0d8e6b1949c06"><div class="ttname"><a href="common_8h.html#a63a7afe893fb15355e18cddf5326b812ab38857c4e0e8d79f04e0d8e6b1949c06">_EBS_INTF_USBCDC</a></div><div class="ttdeci">@ _EBS_INTF_USBCDC</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00020">common.h:20</a></div></div>
+<div class="ttc" id="acommon_8h_html_a7fe1e1e06e647ce53b2987d3d58714e0"><div class="ttname"><a href="common_8h.html#a7fe1e1e06e647ce53b2987d3d58714e0">EBS_INTF_UART</a></div><div class="ttdeci">#define EBS_INTF_UART</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00014">common.h:14</a></div></div>
+<div class="ttc" id="acommon_8h_html_ad4ded4cfac13a65056e5397c3717e787"><div class="ttname"><a href="common_8h.html#ad4ded4cfac13a65056e5397c3717e787">EBS_TRUE</a></div><div class="ttdeci">#define EBS_TRUE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00007">common.h:7</a></div></div>
+<div class="ttc" id="acommon_8h_html_adcf47ac05227e515cd45cadbddb785f9"><div class="ttname"><a href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9">EBS_BOOL_t</a></div><div class="ttdeci">EBS_BOOL_t</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00009">common.h:9</a></div></div>
+<div class="ttc" id="acommon_8h_html_adcf47ac05227e515cd45cadbddb785f9ac2a8da5efcae094769cde66f470536aa"><div class="ttname"><a href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9ac2a8da5efcae094769cde66f470536aa">_EBS_FALSE</a></div><div class="ttdeci">@ _EBS_FALSE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00010">common.h:10</a></div></div>
+<div class="ttc" id="acommon_8h_html_adcf47ac05227e515cd45cadbddb785f9afa24c8e6798497577229d8fef462d352"><div class="ttname"><a href="common_8h.html#adcf47ac05227e515cd45cadbddb785f9afa24c8e6798497577229d8fef462d352">_EBS_TRUE</a></div><div class="ttdeci">@ _EBS_TRUE</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00012">common.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_d2b7a96810b9669f8191cf27d0893188.html">constants</a></li><li class="navelem"><b>common.h</b></li>
-    <li class="footer">Generated on Sun Dec 1 2024 08:07:38 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_52c912f73dac9c4c0e442232e1b2bd80.html">hal</a></li><li class="navelem"><a class="el" href="dir_d2b7a96810b9669f8191cf27d0893188.html">constants</a></li><li class="navelem"><a class="el" href="common_8h.html">common.h</a></li>
+    <li class="footer">Generated on Mon Dec 9 2024 08:08:04 for ebs-hal-uc by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
