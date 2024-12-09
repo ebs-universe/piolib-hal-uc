@@ -170,7 +170,7 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="dma_8h.html" target="_top" xlink:title="HAL for DMA.">
+<g id="a_node13"><a xlink:href="uc_2dma_8h.html" target="_top" xlink:title="HAL for DMA.">
 <polygon fill="none" stroke="black" points="336.5,-112.5 336.5,-131.5 416.5,-131.5 416.5,-112.5 336.5,-112.5"/>
 <text text-anchor="middle" x="376.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">hal/uc/dma.h</text>
 </a>

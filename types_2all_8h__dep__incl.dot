@@ -24,7 +24,7 @@ digraph "hal/types/all.h"
   Node8 [label="hal/uc/crypto.h",height=0.2,width=0.4,color="black",URL="$uc_2crypto_8h.html",tooltip=" "];
   Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node9 [label="hal/uc/dma.h",height=0.2,width=0.4,color="black",URL="$dma_8h.html",tooltip="HAL for DMA."];
+  Node9 [label="hal/uc/dma.h",height=0.2,width=0.4,color="black",URL="$uc_2dma_8h.html",tooltip="HAL for DMA."];
   Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node10 [label="hal/uc/eeprom.h",height=0.2,width=0.4,color="black",URL="$eeprom_8h.html",tooltip="HAL for uC EEPROM peripherals."];
   Node10 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
