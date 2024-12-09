@@ -11,6 +11,6 @@ digraph "CRYPTO_STATE_t"
   Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ctx" ,fontname="Helvetica"];
   Node3 [label="CRYPTO_CTX_t",height=0.2,width=0.4,color="black",URL="$struct_c_r_y_p_t_o___c_t_x__t.html",tooltip=" "];
   Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" profile" ,fontname="Helvetica"];
-  Node4 [label="CRYPTO_PROFILE_t",height=0.2,width=0.4,color="black",URL="$struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t.html",tooltip=" "];
+  Node4 [label="CRYPTO_PROFILE_t",height=0.2,width=0.4,color="black",URL="$types_2crypto_8h.html#struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t",tooltip=" "];
   Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ctx" ,fontname="Helvetica"];
 }

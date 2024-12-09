@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="types_2crypto_8h.html#struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="15,-134.5 15,-153.5 125,-153.5 125,-134.5 15,-134.5"/>
 <text text-anchor="middle" x="70" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">CRYPTO_PROFILE_t</text>
 </a>

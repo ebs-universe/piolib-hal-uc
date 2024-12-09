@@ -29,10 +29,10 @@ var searchData=
   ['timer_5fwidth_5f32b_170',['TIMER_WIDTH_32B',['../constants_2timer_8h.html#afab28f43155eca4db79ce7f8ded6aa17',1,'timer.h']]],
   ['timer_5fwidth_5f8b_171',['TIMER_WIDTH_8B',['../constants_2timer_8h.html#a0eded4c270fe09472f754be6c88aa5e0',1,'timer.h']]],
   ['timer_5fwidth_5ft_172',['TIMER_WIDTH_t',['../constants_2timer_8h.html#ab5ecb598d0572b852772cc6dcaced445',1,'timer.h']]],
-  ['tm_5freal_5ft_173',['TM_REAL_t',['../struct_t_m___r_e_a_l__t.html',1,'']]],
+  ['tm_5freal_5ft_173',['TM_REAL_t',['../types_2rtc_8h.html#struct_t_m___r_e_a_l__t',1,'']]],
   ['tm_5freal_5ft_174',['tm_real_t',['../types_2rtc_8h.html#a4d68c653cca64590d7af5c9434363a19',1,'rtc.h']]],
   ['tm_5freal_5ft_5fdefined_175',['TM_REAL_t_DEFINED',['../types_2rtc_8h.html#a8cb8cdde6a7bc8d7ad9386d9626ddddb',1,'rtc.h']]],
-  ['transaction_176',['transaction',['../struct_c_r_y_p_t_o___s_t_a_t_e__t.html#a1c8b6c9d1ad56e7ac2a2a0e33c339d58',1,'CRYPTO_STATE_t']]],
+  ['transaction_176',['transaction',['../types_2crypto_8h.html#a1c8b6c9d1ad56e7ac2a2a0e33c339d58',1,'CRYPTO_STATE_t']]],
   ['trc_5fcb_177',['trc_cb',['../struct_c_r_y_p_t_o___t_r_a_n_s_a_c_t_i_o_n__t.html#a08b63c1e623bead1750debcb2b88e2e3',1,'CRYPTO_TRANSACTION_t']]],
   ['types_2eh_178',['types.h',['../types_8h.html',1,'']]]
 ];

@@ -7,5 +7,5 @@ digraph "RTC_STATE_t"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="RTC_STATE_t",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" iobuffer" ,fontname="Helvetica"];
-  Node2 [label="TM_REAL_t",height=0.2,width=0.4,color="black",URL="$struct_t_m___r_e_a_l__t.html",tooltip=" "];
+  Node2 [label="TM_REAL_t",height=0.2,width=0.4,color="black",URL="$types_2rtc_8h.html#struct_t_m___r_e_a_l__t",tooltip=" "];
 }
