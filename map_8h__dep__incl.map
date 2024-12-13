@@ -4,7 +4,7 @@
 <area shape="rect" id="node3" href="$uc_2all_8h.html" title=" " alt="" coords="953,155,1046,181"/>
 <area shape="rect" id="node5" href="$core_8h.html" title="HAL for uC Core peripherals." alt="" coords="181,80,287,107"/>
 <area shape="rect" id="node6" href="$uc_2crypto_8h.html" title=" " alt="" coords="311,80,429,107"/>
-<area shape="rect" id="node7" href="$dma_8h.html" title="HAL for DMA." alt="" coords="454,80,561,107"/>
+<area shape="rect" id="node7" href="$uc_2dma_8h.html" title="HAL for DMA." alt="" coords="454,80,561,107"/>
 <area shape="rect" id="node8" href="$eeprom_8h.html" title="HAL for uC EEPROM peripherals." alt="" coords="585,80,712,107"/>
 <area shape="rect" id="node9" href="$entropy_8h.html" title="HAL for uC entropy source." alt="" coords="737,80,862,107"/>
 <area shape="rect" id="node10" href="$gpio_8h.html" title="HAL for uC GPIOs." alt="" coords="887,80,992,107"/>
