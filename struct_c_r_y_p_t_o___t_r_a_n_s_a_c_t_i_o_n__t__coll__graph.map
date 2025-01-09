@@ -1,5 +1,7 @@
 <map id="CRYPTO_TRANSACTION_t" name="CRYPTO_TRANSACTION_t">
-<area shape="rect" id="node1" title=" " alt="" coords="5,184,192,211"/>
-<area shape="rect" id="node2" href="$struct_c_r_y_p_t_o___c_t_x__t.html" title=" " alt="" coords="39,95,158,121"/>
-<area shape="rect" id="node3" href="$types_2crypto_8h.html#struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t" title=" " alt="" coords="25,5,172,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,181,192,207"/>
+<area shape="rect" id="Node000002" href="$struct_c_r_y_p_t_o___c_t_x__t.html" title=" " alt="" coords="39,93,158,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,133,101,181,96,181,96,133"/>
+<area shape="rect" id="Node000003" href="$types_2crypto_8h.html#struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t" title=" " alt="" coords="25,5,172,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,45,101,93,96,93,96,45"/>
 </map>

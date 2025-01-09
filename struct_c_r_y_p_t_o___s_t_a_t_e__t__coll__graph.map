@@ -1,6 +1,10 @@
 <map id="CRYPTO_STATE_t" name="CRYPTO_STATE_t">
-<area shape="rect" id="node1" title=" " alt="" coords="13,273,144,300"/>
-<area shape="rect" id="node2" href="$struct_c_r_y_p_t_o___t_r_a_n_s_a_c_t_i_o_n__t.html" title=" " alt="" coords="107,184,293,211"/>
-<area shape="rect" id="node3" href="$struct_c_r_y_p_t_o___c_t_x__t.html" title=" " alt="" coords="19,95,138,121"/>
-<area shape="rect" id="node4" href="$types_2crypto_8h.html#struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t" title=" " alt="" coords="5,5,152,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="13,269,144,295"/>
+<area shape="rect" id="Node000002" href="$struct_c_r_y_p_t_o___c_t_x__t.html" title=" " alt="" coords="19,93,138,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,133,73,168,72,207,79,269,74,269,67,207,67,167,71,132"/>
+<area shape="rect" id="Node000004" href="$struct_c_r_y_p_t_o___t_r_a_n_s_a_c_t_i_o_n__t.html" title=" " alt="" coords="107,181,293,207"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="108,125,185,179,182,183,105,129"/>
+<area shape="rect" id="Node000003" href="$types_2crypto_8h.html#struct_c_r_y_p_t_o___p_r_o_f_i_l_e__t" title=" " alt="" coords="5,5,152,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,45,81,93,76,93,76,45"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,217,97,271,94,267,171,213"/>
 </map>

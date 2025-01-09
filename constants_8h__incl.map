@@ -1,11 +1,19 @@
 <map id="hal/constants.h" name="hal/constants.h">
-<area shape="rect" id="node1" title=" " alt="" coords="263,5,385,32"/>
-<area shape="rect" id="node2" href="$constants_2all_8h.html" title=" " alt="" coords="265,80,383,107"/>
-<area shape="rect" id="node3" href="$common_8h.html" title=" " alt="" coords="5,155,96,181"/>
-<area shape="rect" id="node4" href="$constants_2crypto_8h.html" title=" " alt="" coords="120,155,195,181"/>
-<area shape="rect" id="node5" href="$constants_2rtc_8h.html" title=" " alt="" coords="219,155,269,181"/>
-<area shape="rect" id="node6" href="$constants_2uart_8h.html" title=" " alt="" coords="294,155,354,181"/>
-<area shape="rect" id="node7" href="$constants_2adc_8h.html" title=" " alt="" coords="378,155,435,181"/>
-<area shape="rect" id="node8" href="$constants_2timer_8h.html" title=" " alt="" coords="459,155,527,181"/>
-<area shape="rect" id="node9" href="$constants_2dma_8h.html" title=" " alt="" coords="551,155,614,181"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="263,5,385,31"/>
+<area shape="rect" id="Node000002" href="$constants_2all_8h.html" title=" " alt="" coords="265,79,383,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="327,31,327,65,321,65,321,31"/>
+<area shape="rect" id="Node000003" href="$common_8h.html" title=" " alt="" coords="5,152,96,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="281,107,109,151,107,146,279,101"/>
+<area shape="rect" id="Node000004" href="$constants_2crypto_8h.html" title=" " alt="" coords="120,152,195,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="298,106,198,149,196,144,296,102"/>
+<area shape="rect" id="Node000005" href="$constants_2rtc_8h.html" title=" " alt="" coords="219,152,269,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="313,106,269,145,265,141,309,102"/>
+<area shape="rect" id="Node000006" href="$constants_2uart_8h.html" title=" " alt="" coords="294,152,354,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="327,104,327,138,321,138,321,104"/>
+<area shape="rect" id="Node000007" href="$constants_2adc_8h.html" title=" " alt="" coords="378,152,435,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="339,102,384,141,381,145,336,106"/>
+<area shape="rect" id="Node000008" href="$constants_2timer_8h.html" title=" " alt="" coords="459,152,527,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="352,102,454,144,452,149,350,106"/>
+<area shape="rect" id="Node000009" href="$constants_2dma_8h.html" title=" " alt="" coords="551,152,614,177"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="366,101,539,149,537,154,365,107"/>
 </map>
