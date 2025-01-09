@@ -38,4 +38,12 @@ typedef enum {
     _DMA_REQ_SRC = DMA_REQ_SRC,
 } DMA_REQUEST_TYPE_t;
 
+#define DMA_CHN_TYPE_LINEAR         0
+#define DMA_CHN_TYPE_CIRCULAR       1
+
+typedef enum {
+    _DMA_CHN_TYPE_LINEAR = DMA_CHN_TYPE_LINEAR,
+    _DMA_CHN_TYPE_CIRCULAR = DMA_CHN_TYPE_CIRCULAR
+} DMA_CHN_TYPE_t;
+
 #endif      

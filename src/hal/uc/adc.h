@@ -70,6 +70,8 @@ void adc_install_eoc_handler(HAL_BASE_t intfnum, void (*handler)(HAL_BASE_t, voi
 
 void adc_install_eos_handler(HAL_BASE_t intfnum, void (*handler)(void));
 
+void adc_install_eob_handler(HAL_BASE_t intfnum, void (*handler)(uint8_t));
+
 // void adc_set_sample_rate(HAL_BASE_t intfnum);
 
 void adc_poll(void);

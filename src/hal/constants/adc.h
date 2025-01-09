@@ -16,4 +16,14 @@ typedef enum {
     _ADC_MODE_CONTINUOUS = ADC_MODE_CONTINUOUS
 } ADC_MODE_t;
 
+#define ADC_DM_POLLING          0
+#define ADC_DM_INTERRUPT        1
+#define ADC_DM_DMA              2
+
+typedef enum {
+    _ADC_DM_POLLING = ADC_DM_POLLING,
+    _ADC_DM_INTERRUPT = ADC_DM_INTERRUPT,
+    _ADC_DM_DMA = ADC_DM_DMA
+} ADC_DATA_MAMANGEMENT_MODE_t;
+
 #endif
