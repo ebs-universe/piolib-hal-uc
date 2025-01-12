@@ -136,7 +136,9 @@ static inline HAL_BASE_t uart_write(HAL_BASE_t intfnum, uint8_t *buffer, HAL_BAS
  * 
  * @see uart_send_trigger()
  */
-HAL_BASE_t uart_vprintf(HAL_BASE_t intfnum, const char *format, ...);
+HAL_BASE_t uart_printf(HAL_BASE_t intfnum, const char *format, ...);
+
+HAL_BASE_t uart_vprintf(HAL_BASE_t intfnum, const char *format, va_list args);
 
 
 /**
