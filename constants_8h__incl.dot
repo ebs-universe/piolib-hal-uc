@@ -10,16 +10,18 @@ digraph "hal/constants.h"
   Node2 [id="Node000002",label="constants/all.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2all_8h.html",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="common.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$common_8h.html",tooltip=" "];
-  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="crypto.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2crypto_8h.html",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="platform/constants.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="rtc.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2rtc_8h.html",tooltip=" "];
+  Node5 [id="Node000005",label="crypto.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2crypto_8h.html",tooltip=" "];
   Node2 -> Node6 [id="edge5_Node000002_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="uart.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2uart_8h.html",tooltip=" "];
+  Node6 [id="Node000006",label="rtc.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2rtc_8h.html",tooltip=" "];
   Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="adc.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2adc_8h.html",tooltip=" "];
+  Node7 [id="Node000007",label="uart.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2uart_8h.html",tooltip=" "];
   Node2 -> Node8 [id="edge7_Node000002_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="timer.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2timer_8h.html",tooltip=" "];
+  Node8 [id="Node000008",label="adc.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2adc_8h.html",tooltip=" "];
   Node2 -> Node9 [id="edge8_Node000002_Node000009",color="steelblue1",style="solid",tooltip=" "];
-  Node9 [id="Node000009",label="dma.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2dma_8h.html",tooltip=" "];
+  Node9 [id="Node000009",label="timer.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2timer_8h.html",tooltip=" "];
+  Node2 -> Node10 [id="edge9_Node000002_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="dma.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants_2dma_8h.html",tooltip=" "];
 }
