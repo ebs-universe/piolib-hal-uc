@@ -1,6 +1,6 @@
 {
     "name": "ebs-hal-uc",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "description": "uC HAL interface for EBS Projects",
     "keywords": "ebs",
     "repository": {
@@ -41,7 +41,7 @@
         },
         {
             "owner": "chintal",
-            "name": "ebs-hal-uc-avr         ",
+            "name": "ebs-hal-uc-avr",
             "version": "^0.0.4",
             "platforms":  ["atmelavr"]
         },
