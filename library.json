@@ -1,6 +1,6 @@
 {
     "name": "ebs-hal-uc",
-    "version": "0.3.2",
+    "version": "0.3.5",
     "description": "uC HAL interface for EBS Projects",
     "keywords": "ebs",
     "repository": {
