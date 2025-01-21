@@ -10,6 +10,7 @@ var dir_bd7daeaaa812801dff3000c33ca17751 =
     [ "gpio.h", "gpio_8h.html", null ],
     [ "id.h", "id_8h.html", null ],
     [ "map.h", "map_8h.html", null ],
+    [ "qdelay.h", "uc_2qdelay_8h.html", null ],
     [ "rtc.h", "uc_2rtc_8h.html", null ],
     [ "spi.h", "spi_8h.html", null ],
     [ "timer.h", "uc_2timer_8h.html", null ],

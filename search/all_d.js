@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['reset_0',['reset',['../struct_c_r_y_p_t_o___c_t_x__t.html#abaf2e60a8780315e85ec10d3699fff5d',1,'CRYPTO_CTX_t']]],
-  ['rtc_2eh_1',['rtc.h',['../constants_2rtc_8h.html',1,'(Global Namespace)'],['../types_2rtc_8h.html',1,'(Global Namespace)'],['../uc_2rtc_8h.html',1,'(Global Namespace)']]],
-  ['rtc_5fst_5fidle_2',['RTC_ST_IDLE',['../constants_2rtc_8h.html#af9b050b0231325e0565ecc2733f592f1a63f0a521f1d4f16bd0f4578f14695224',1,'rtc.h']]],
-  ['rtc_5fst_5fpreinit_3',['RTC_ST_PREINIT',['../constants_2rtc_8h.html#af9b050b0231325e0565ecc2733f592f1a647a1613c331910d5588a7c752d90156',1,'rtc.h']]],
-  ['rtc_5fst_5fsync_4',['RTC_ST_SYNC',['../constants_2rtc_8h.html#af9b050b0231325e0565ecc2733f592f1a57cefb1754597478cb978bce73966d45',1,'rtc.h']]],
-  ['rtc_5fst_5ft_5',['RTC_ST_t',['../constants_2rtc_8h.html#af9b050b0231325e0565ecc2733f592f1',1,'rtc.h']]],
-  ['rtc_5fst_5fwait_5fread_6',['RTC_ST_WAIT_READ',['../constants_2rtc_8h.html#af9b050b0231325e0565ecc2733f592f1a0daebef291d5f6efc7fae8e094d4ac3e',1,'rtc.h']]],
-  ['rtc_5fst_5fwait_5fwrite_7',['RTC_ST_WAIT_WRITE',['../constants_2rtc_8h.html#af9b050b0231325e0565ecc2733f592f1a3d4229832cc26d2ebe3b6fa9e8bc6672',1,'rtc.h']]],
-  ['rtc_5fstate_5ft_8',['rtc_state_t',['../struct_r_t_c___s_t_a_t_e__t.html',1,'RTC_STATE_t'],['../types_2rtc_8h.html#aba31205a9a800b6367a13d3505404ea8',1,'rtc_state_t:&#160;rtc.h']]]
+  ['qdelay_2eh_0',['qdelay.h',['../constants_2qdelay_8h.html',1,'(Global Namespace)'],['../uc_2qdelay_8h.html',1,'(Global Namespace)']]],
+  ['qdelay_5fprovider_5fcpu_1',['QDELAY_PROVIDER_CPU',['../constants_2qdelay_8h.html#aa801d28bb9b20d98a6269f9a9d147534',1,'qdelay.h']]],
+  ['qdelay_5fprovider_5fdwt_2',['QDELAY_PROVIDER_DWT',['../constants_2qdelay_8h.html#a6f30960a25f110f7fc33fab8d6e30857',1,'qdelay.h']]],
+  ['qdelay_5fprovider_5fsystick_3',['QDELAY_PROVIDER_SYSTICK',['../constants_2qdelay_8h.html#ab463e819e7884188b2af4022052884bb',1,'qdelay.h']]],
+  ['qdelay_5fprovider_5ft_4',['QDELAY_PROVIDER_t',['../constants_2qdelay_8h.html#aa376735f9bdd819ae22c845ee165d1b6',1,'qdelay.h']]],
+  ['qdelay_5fprovider_5ftimer_5',['QDELAY_PROVIDER_TIMER',['../constants_2qdelay_8h.html#a496bd66581e465d5540a1dbf996bd38b',1,'qdelay.h']]]
 ];

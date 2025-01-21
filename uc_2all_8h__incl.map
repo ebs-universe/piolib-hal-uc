@@ -1,47 +1,49 @@
 <map id="hal/uc/all.h" name="hal/uc/all.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="897,5,990,31"/>
-<area shape="rect" id="Node000002" href="$map_8h.html" title="HAL for uC Peripheral Map." alt="" coords="955,152,1017,177"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="991,22,1102,41,1152,56,1171,66,1184,77,1193,97,1189,115,1173,129,1150,140,1091,155,1032,163,1031,157,1090,149,1148,135,1170,124,1184,112,1188,98,1180,80,1168,70,1150,61,1100,46,990,27"/>
-<area shape="rect" id="Node000016" href="$core_8h.html" title="HAL for uC Core peripherals." alt="" coords="313,79,376,104"/>
-<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="897,26,681,45,541,61,400,81,390,83,389,78,399,76,541,56,681,40,896,20"/>
-<area shape="rect" id="Node000019" href="$uc_2crypto_8h.html" title=" " alt="" coords="1245,79,1319,104"/>
-<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="991,26,1232,77,1231,82,990,32"/>
-<area shape="rect" id="Node000020" href="$gpio_8h.html" title="HAL for uC GPIOs." alt="" coords="412,79,475,104"/>
-<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="897,26,721,45,607,61,488,81,488,76,606,56,720,40,896,21"/>
-<area shape="rect" id="Node000021" href="$id_8h.html" title="HAL for uC ID." alt="" coords="499,79,545,104"/>
-<area shape="poly" id="edge27_Node000001_Node000021" title=" " alt="" coords="897,27,750,46,656,61,559,81,558,76,655,56,749,40,896,21"/>
-<area shape="rect" id="Node000022" href="$eeprom_8h.html" title="HAL for uC EEPROM peripherals." alt="" coords="569,79,653,104"/>
-<area shape="poly" id="edge29_Node000001_Node000022" title=" " alt="" coords="897,32,667,81,666,76,896,27"/>
-<area shape="rect" id="Node000023" href="$entropy_8h.html" title="HAL for uC entropy source." alt="" coords="678,79,761,104"/>
-<area shape="poly" id="edge31_Node000001_Node000023" title=" " alt="" coords="908,33,769,77,768,72,907,28"/>
-<area shape="rect" id="Node000024" href="$uc_2adc_8h.html" title="HAL for uC Internal ADC interfaces." alt="" coords="785,79,843,104"/>
-<area shape="poly" id="edge33_Node000001_Node000024" title=" " alt="" coords="924,33,849,74,846,69,921,28"/>
-<area shape="rect" id="Node000025" href="$uc_2timer_8h.html" title="HAL for uC Timers." alt="" coords="867,79,935,104"/>
-<area shape="poly" id="edge35_Node000001_Node000025" title=" " alt="" coords="939,32,917,68,912,66,934,30"/>
-<area shape="rect" id="Node000026" href="$uc_2uart_8h.html" title=" " alt="" coords="1344,79,1404,104"/>
-<area shape="poly" id="edge37_Node000001_Node000026" title=" " alt="" coords="991,22,1138,42,1331,76,1330,81,1137,48,990,27"/>
-<area shape="rect" id="Node000029" href="$spi_8h.html" title="HAL for SPI interfaces." alt="" coords="959,79,1013,104"/>
-<area shape="poly" id="edge41_Node000001_Node000029" title=" " alt="" coords="953,30,974,66,970,68,948,32"/>
-<area shape="rect" id="Node000030" href="$usb_8h.html" title="HAL for USB interface." alt="" coords="1037,79,1095,104"/>
-<area shape="poly" id="edge43_Node000001_Node000030" title=" " alt="" coords="964,28,1036,69,1033,74,962,33"/>
-<area shape="rect" id="Node000031" href="$usbcdc_8h.html" title="HAL for USB CDC interface." alt="" coords="1428,79,1507,104"/>
-<area shape="poly" id="edge45_Node000001_Node000031" title=" " alt="" coords="991,21,1173,41,1415,76,1414,81,1172,46,990,26"/>
-<area shape="rect" id="Node000032" href="$uc_2rtc_8h.html" title="HAL for uC RTCs." alt="" coords="1119,79,1170,104"/>
-<area shape="poly" id="edge49_Node000001_Node000032" title=" " alt="" coords="977,28,1107,74,1105,79,975,33"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="943,5,1037,31"/>
+<area shape="rect" id="Node000002" href="$map_8h.html" title="HAL for uC Peripheral Map." alt="" coords="964,152,1027,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1037,17,1122,19,1224,28,1273,36,1316,46,1351,59,1375,77,1381,91,1375,106,1351,123,1317,136,1225,154,1125,163,1041,166,1041,161,1125,158,1225,149,1315,131,1349,118,1371,102,1375,91,1371,80,1348,64,1314,51,1271,41,1223,33,1122,25,1037,22"/>
+<area shape="rect" id="Node000016" href="$core_8h.html" title="HAL for uC Core peripherals." alt="" coords="307,79,369,104"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="943,25,705,43,548,59,389,81,383,82,382,77,388,76,547,54,704,38,943,19"/>
+<area shape="rect" id="Node000019" href="$uc_2crypto_8h.html" title=" " alt="" coords="489,79,563,104"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="943,27,785,48,577,81,576,76,784,43,943,22"/>
+<area shape="rect" id="Node000020" href="$gpio_8h.html" title="HAL for uC GPIOs." alt="" coords="401,79,464,104"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="944,25,745,44,614,60,478,81,477,76,613,55,744,38,943,20"/>
+<area shape="rect" id="Node000021" href="$id_8h.html" title="HAL for uC ID." alt="" coords="588,79,635,104"/>
+<area shape="poly" id="edge27_Node000001_Node000021" title=" " alt="" coords="943,28,814,48,648,81,647,76,813,42,942,23"/>
+<area shape="rect" id="Node000022" href="$eeprom_8h.html" title="HAL for uC EEPROM peripherals." alt="" coords="659,79,743,104"/>
+<area shape="poly" id="edge29_Node000001_Node000022" title=" " alt="" coords="944,33,757,79,755,74,943,28"/>
+<area shape="rect" id="Node000023" href="$entropy_8h.html" title="HAL for uC entropy source." alt="" coords="767,79,850,104"/>
+<area shape="poly" id="edge31_Node000001_Node000023" title=" " alt="" coords="962,33,852,76,850,71,960,28"/>
+<area shape="rect" id="Node000024" href="$uc_2adc_8h.html" title="HAL for uC Internal ADC interfaces." alt="" coords="875,79,932,104"/>
+<area shape="poly" id="edge33_Node000001_Node000024" title=" " alt="" coords="978,33,930,72,926,68,974,29"/>
+<area shape="rect" id="Node000025" href="$uc_2timer_8h.html" title="HAL for uC Timers." alt="" coords="956,79,1024,104"/>
+<area shape="poly" id="edge35_Node000001_Node000025" title=" " alt="" coords="993,31,993,65,987,65,987,31"/>
+<area shape="rect" id="Node000026" href="$uc_2uart_8h.html" title=" " alt="" coords="1539,79,1599,104"/>
+<area shape="poly" id="edge37_Node000001_Node000026" title=" " alt="" coords="1037,19,1245,37,1383,53,1526,76,1525,81,1382,58,1245,42,1037,25"/>
+<area shape="rect" id="Node000029" href="$spi_8h.html" title="HAL for SPI interfaces." alt="" coords="1049,79,1102,104"/>
+<area shape="poly" id="edge41_Node000001_Node000029" title=" " alt="" coords="1005,29,1053,68,1049,72,1002,33"/>
+<area shape="rect" id="Node000030" href="$usb_8h.html" title="HAL for USB interface." alt="" coords="1127,79,1184,104"/>
+<area shape="poly" id="edge43_Node000001_Node000030" title=" " alt="" coords="1018,28,1117,71,1115,76,1016,33"/>
+<area shape="rect" id="Node000031" href="$usbcdc_8h.html" title="HAL for USB CDC interface." alt="" coords="1436,79,1515,104"/>
+<area shape="poly" id="edge45_Node000001_Node000031" title=" " alt="" coords="1037,22,1205,44,1417,76,1422,77,1421,82,1416,81,1204,50,1036,28"/>
+<area shape="rect" id="Node000032" href="$uc_2rtc_8h.html" title="HAL for uC RTCs." alt="" coords="1209,79,1259,104"/>
+<area shape="poly" id="edge49_Node000001_Node000032" title=" " alt="" coords="1031,28,1196,76,1195,81,1030,33"/>
+<area shape="rect" id="Node000033" href="$uc_2qdelay_8h.html" title="HAL for Quick Delay." alt="" coords="1284,79,1360,104"/>
+<area shape="poly" id="edge51_Node000001_Node000033" title=" " alt="" coords="1037,26,1271,76,1270,81,1036,32"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="1296,460,1367,485"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1018,168,1088,186,1127,202,1162,223,1192,248,1219,277,1265,339,1300,399,1323,446,1319,448,1296,402,1261,342,1215,281,1188,252,1159,227,1124,206,1086,191,1017,173"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1027,169,1093,187,1129,202,1162,223,1192,249,1219,278,1265,340,1300,399,1323,446,1318,448,1295,402,1260,343,1215,281,1188,253,1159,227,1126,207,1091,192,1026,174"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="783,460,914,485"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="989,178,987,217,977,266,953,321,924,372,869,451,865,447,919,370,948,318,971,265,981,217,984,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="997,178,990,218,976,266,951,321,921,372,868,451,863,448,917,369,946,318,972,264,985,216,992,177"/>
 <area shape="rect" id="Node000005" href="$types_8h.html" title=" " alt="" coords="1053,233,1148,258"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1004,175,1074,223,1071,227,1001,180"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1012,175,1076,222,1073,227,1009,180"/>
 <area shape="rect" id="Node000012" title=" " alt="" coords="1334,233,1441,258"/>
-<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="1018,168,1148,190,1316,223,1333,227,1332,232,1315,228,1147,195,1017,173"/>
+<area shape="poly" id="edge14_Node000002_Node000012" title=" " alt="" coords="1027,168,1154,190,1316,223,1333,227,1332,232,1315,228,1153,196,1026,174"/>
 <area shape="rect" id="Node000013" title=" " alt="" coords="501,233,636,258"/>
-<area shape="poly" id="edge15_Node000002_Node000013" title=" " alt="" coords="955,174,821,196,649,228,630,232,628,227,648,223,820,191,954,168"/>
+<area shape="poly" id="edge15_Node000002_Node000013" title=" " alt="" coords="964,173,827,195,649,228,630,232,628,227,648,223,826,190,963,168"/>
 <area shape="rect" id="Node000014" title=" " alt="" coords="661,233,778,258"/>
-<area shape="poly" id="edge16_Node000002_Node000014" title=" " alt="" coords="955,178,772,231,770,226,954,173"/>
+<area shape="poly" id="edge16_Node000002_Node000014" title=" " alt="" coords="964,178,773,232,772,226,963,172"/>
 <area shape="rect" id="Node000015" title=" " alt="" coords="802,225,962,265"/>
-<area shape="poly" id="edge17_Node000002_Node000015" title=" " alt="" coords="972,180,919,219,916,215,969,175"/>
+<area shape="poly" id="edge17_Node000002_Node000015" title=" " alt="" coords="980,180,922,220,919,215,977,175"/>
 <area shape="rect" id="Node000006" href="$types_2all_8h.html" title=" " alt="" coords="1059,313,1150,339"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1104,258,1106,299,1101,300,1099,258"/>
 <area shape="rect" id="Node000007" href="$types_2crypto_8h.html" title=" " alt="" coords="1185,387,1259,412"/>
@@ -57,28 +59,29 @@
 <area shape="rect" id="Node000010" href="$constants_2rtc_8h.html" title=" " alt="" coords="939,460,1081,485"/>
 <area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="1117,414,1044,455,1041,451,1114,410"/>
 <area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="1026,413,896,458,894,453,1024,408"/>
-<area shape="poly" id="edge19_Node000016_Node000002" title=" " alt="" coords="377,97,400,101,555,122,708,139,941,158,940,163,708,144,554,128,399,107,376,102"/>
+<area shape="poly" id="edge19_Node000016_Node000002" title=" " alt="" coords="370,98,389,101,550,123,709,140,950,158,950,163,709,145,550,129,388,107,369,103"/>
 <area shape="rect" id="Node000017" title=" " alt="" coords="5,152,191,177"/>
-<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="314,104,152,151,150,146,312,99"/>
+<area shape="poly" id="edge20_Node000016_Node000017" title=" " alt="" coords="307,104,150,151,149,146,306,99"/>
 <area shape="rect" id="Node000018" title=" " alt="" coords="215,152,427,177"/>
-<area shape="poly" id="edge21_Node000016_Node000018" title=" " alt="" coords="343,105,331,140,326,138,338,103"/>
-<area shape="poly" id="edge23_Node000019_Node000002" title=" " alt="" coords="1245,104,1031,155,1030,150,1244,99"/>
-<area shape="poly" id="edge26_Node000020_Node000002" title=" " alt="" coords="475,99,487,101,615,123,743,139,941,157,940,163,742,144,614,128,485,107,474,104"/>
-<area shape="poly" id="edge25_Node000020_Node000004" title=" " alt="" coords="449,104,459,164,466,244,466,327,468,338,474,349,497,370,532,389,575,407,675,436,771,456,769,461,674,441,574,412,529,394,494,374,470,352,463,340,461,328,461,244,454,164,443,105"/>
-<area shape="poly" id="edge28_Node000021_Node000002" title=" " alt="" coords="546,98,557,101,664,123,771,139,941,157,940,162,771,144,663,128,556,107,545,103"/>
-<area shape="poly" id="edge30_Node000022_Node000002" title=" " alt="" coords="654,99,667,101,942,153,941,158,665,107,653,104"/>
-<area shape="poly" id="edge32_Node000023_Node000002" title=" " alt="" coords="762,101,942,149,941,154,760,106"/>
-<area shape="poly" id="edge34_Node000024_Node000002" title=" " alt="" coords="843,102,946,144,944,149,841,106"/>
-<area shape="poly" id="edge36_Node000025_Node000002" title=" " alt="" coords="916,102,963,141,960,145,913,106"/>
-<area shape="poly" id="edge38_Node000026_Node000002" title=" " alt="" coords="1344,104,1332,107,1166,138,1032,160,1031,154,1166,133,1331,101,1343,98"/>
-<area shape="rect" id="Node000027" title=" " alt="" coords="1314,152,1389,177"/>
-<area shape="poly" id="edge39_Node000026_Node000027" title=" " alt="" coords="1373,105,1362,140,1357,138,1368,104"/>
-<area shape="rect" id="Node000028" title=" " alt="" coords="1413,152,1567,177"/>
-<area shape="poly" id="edge40_Node000026_Node000028" title=" " alt="" coords="1394,102,1461,142,1458,147,1391,106"/>
-<area shape="poly" id="edge42_Node000029_Node000002" title=" " alt="" coords="989,104,989,138,983,138,983,104"/>
-<area shape="poly" id="edge44_Node000030_Node000002" title=" " alt="" coords="1055,106,1011,145,1007,141,1051,102"/>
-<area shape="poly" id="edge47_Node000031_Node000002" title=" " alt="" coords="1428,105,1417,107,1201,140,1031,161,1031,156,1201,135,1416,101,1427,99"/>
-<area shape="poly" id="edge46_Node000031_Node000027" title=" " alt="" coords="1450,106,1383,147,1381,142,1447,102"/>
-<area shape="poly" id="edge48_Node000031_Node000028" title=" " alt="" coords="1474,104,1485,138,1480,140,1469,105"/>
-<area shape="poly" id="edge50_Node000032_Node000002" title=" " alt="" coords="1120,106,1025,149,1023,144,1118,102"/>
+<area shape="poly" id="edge21_Node000016_Node000018" title=" " alt="" coords="338,105,329,140,324,138,333,104"/>
+<area shape="poly" id="edge23_Node000019_Node000002" title=" " alt="" coords="564,99,576,101,785,135,951,156,950,161,784,140,575,107,563,104"/>
+<area shape="poly" id="edge26_Node000020_Node000002" title=" " alt="" coords="465,99,477,101,611,123,745,139,950,158,950,163,744,144,611,128,476,107,464,104"/>
+<area shape="poly" id="edge25_Node000020_Node000004" title=" " alt="" coords="439,104,456,163,463,203,466,244,466,327,468,338,474,349,497,370,532,389,575,407,675,436,771,456,769,461,674,441,574,412,529,394,494,374,470,352,463,340,461,328,461,244,458,204,451,164,434,105"/>
+<area shape="poly" id="edge28_Node000021_Node000002" title=" " alt="" coords="635,98,647,101,814,135,951,155,950,161,813,140,645,107,634,103"/>
+<area shape="poly" id="edge30_Node000022_Node000002" title=" " alt="" coords="744,100,951,150,950,155,742,105"/>
+<area shape="poly" id="edge32_Node000023_Node000002" title=" " alt="" coords="840,102,953,145,951,149,838,107"/>
+<area shape="poly" id="edge34_Node000024_Node000002" title=" " alt="" coords="920,102,971,141,968,146,916,106"/>
+<area shape="poly" id="edge36_Node000025_Node000002" title=" " alt="" coords="994,104,996,138,991,139,988,105"/>
+<area shape="poly" id="edge38_Node000026_Node000002" title=" " alt="" coords="1539,104,1528,107,1389,129,1252,146,1041,163,1040,158,1251,140,1389,124,1527,101,1538,99"/>
+<area shape="rect" id="Node000027" title=" " alt="" coords="1415,152,1490,177"/>
+<area shape="poly" id="edge39_Node000026_Node000027" title=" " alt="" coords="1551,106,1485,147,1482,142,1549,102"/>
+<area shape="rect" id="Node000028" title=" " alt="" coords="1515,152,1668,177"/>
+<area shape="poly" id="edge40_Node000026_Node000028" title=" " alt="" coords="1575,104,1586,138,1581,140,1570,105"/>
+<area shape="poly" id="edge42_Node000029_Node000002" title=" " alt="" coords="1064,106,1020,145,1017,141,1061,102"/>
+<area shape="poly" id="edge44_Node000030_Node000002" title=" " alt="" coords="1131,106,1035,149,1033,144,1129,102"/>
+<area shape="poly" id="edge47_Node000031_Node000002" title=" " alt="" coords="1436,103,1417,107,1207,138,1041,160,1040,155,1206,133,1416,101,1435,98"/>
+<area shape="poly" id="edge46_Node000031_Node000027" title=" " alt="" coords="1474,105,1463,140,1458,138,1469,104"/>
+<area shape="poly" id="edge48_Node000031_Node000028" title=" " alt="" coords="1495,102,1562,142,1559,147,1493,106"/>
+<area shape="poly" id="edge50_Node000032_Node000002" title=" " alt="" coords="1209,103,1197,107,1040,153,1039,148,1196,101,1208,98"/>
+<area shape="poly" id="edge52_Node000033_Node000002" title=" " alt="" coords="1284,104,1272,107,1041,156,1040,151,1271,101,1283,99"/>
 </map>
