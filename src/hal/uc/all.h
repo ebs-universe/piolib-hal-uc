@@ -99,5 +99,6 @@
 #include "usb.h"        
 #include "usbcdc.h" 
 #include "rtc.h"
+#include "qdelay.h"
 
 #endif
