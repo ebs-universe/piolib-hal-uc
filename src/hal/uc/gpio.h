@@ -67,6 +67,11 @@
  */
 void gpio_init(void);
 
+typedef struct GPIO_t {
+   const PORTSELECTOR_t port;
+   const PINSELECTOR_t pin;
+} gpio_t;
+
 /** 
  * @brief Configure pin / pins as output. 
  * 
