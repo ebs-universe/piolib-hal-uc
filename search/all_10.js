@@ -29,7 +29,7 @@ var searchData=
   ['timer_5fwidth_5f32b_26',['TIMER_WIDTH_32B',['../constants_2timer_8h.html#afab28f43155eca4db79ce7f8ded6aa17',1,'timer.h']]],
   ['timer_5fwidth_5f8b_27',['TIMER_WIDTH_8B',['../constants_2timer_8h.html#a0eded4c270fe09472f754be6c88aa5e0',1,'timer.h']]],
   ['timer_5fwidth_5ft_28',['TIMER_WIDTH_t',['../constants_2timer_8h.html#ab5ecb598d0572b852772cc6dcaced445',1,'timer.h']]],
-  ['tm_5freal_5ft_29',['tm_real_t',['../types_2rtc_8h.html#struct_t_m___r_e_a_l__t',1,'TM_REAL_t'],['../types_2rtc_8h.html#a4d68c653cca64590d7af5c9434363a19',1,'tm_real_t:&#160;rtc.h']]],
+  ['tm_5freal_5ft_29',['tm_real_t',['../types_2rtc_8h.html#a4d68c653cca64590d7af5c9434363a19',1,'tm_real_t:&#160;rtc.h'],['../types_2rtc_8h.html#struct_t_m___r_e_a_l__t',1,'TM_REAL_t']]],
   ['tm_5freal_5ft_5fdefined_30',['TM_REAL_t_DEFINED',['../types_2rtc_8h.html#a8cb8cdde6a7bc8d7ad9386d9626ddddb',1,'rtc.h']]],
   ['transaction_31',['transaction',['../types_2crypto_8h.html#a1c8b6c9d1ad56e7ac2a2a0e33c339d58',1,'CRYPTO_STATE_t']]],
   ['trc_5fcb_32',['trc_cb',['../struct_c_r_y_p_t_o___t_r_a_n_s_a_c_t_i_o_n__t.html#a08b63c1e623bead1750debcb2b88e2e3',1,'CRYPTO_TRANSACTION_t']]],
