@@ -75,6 +75,11 @@ typedef struct GPIO_t {
 /** 
  * @brief Configure pin / pins as output. 
  * 
+ * It should be assumed that this will set the output to push-pull mode
+ * at the lowest speed. though the actual behavior is platform dependent. 
+ * Some platforms may preserve the output configuration, while others 
+ * might reset it.
+ * 
  * @param port Port number
  * @param pin Pin number(s)
  */
@@ -82,6 +87,11 @@ void gpio_conf_output(PORTSELECTOR_t port, PINSELECTOR_t  pin);
 
 /** 
  * @brief Configure pin / pins as input.
+ * 
+ * It should be assumed that this will set the input to HiZ mode, 
+ * though the actual behavior is platform dependent. Some platforms may 
+ * preserve the input configuration, while others might reset it to HiZ.
+ * 
  * @param port Port number
  * @param pin Pin number(s)
  */
@@ -90,10 +100,11 @@ void gpio_conf_input(PORTSELECTOR_t port, PINSELECTOR_t pin);
 /** 
  * @brief Configure pin / pins for peripheral's use.
  * @param port Port number
- * @param pin Pin number(s)
+ * @param pin Pin number(s)   
  * @param periph Peripheral. In platforms where it matters, the MSB determines whether 
  *               the pin is to be used as an input or output. The remaining 7 bits are 
- *               reserved for use in devices which allow configurable peripheral use. 
+ *               reserved for use in devices which allow configurable peripheral use or
+ *               provide other pin configurations.
  */
 void gpio_conf_periph(PORTSELECTOR_t port, PINSELECTOR_t pin, uint8_t periph);
 
@@ -109,7 +120,13 @@ void gpio_conf_periph(PORTSELECTOR_t port, PINSELECTOR_t pin, uint8_t periph);
 void gpio_conf_analog(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
- * @brief Configure pullup on pin / pins.
+ * @brief Configure pin / pins for input with pullup
+ * 
+ * It should be assumed that this will set to GP input in pullup mode, 
+ * though the actual behavior is platform dependent. Some platforms may 
+ * set all applicable configuration, while others might just enable the 
+ * pullup.
+ * 
  * @param port Port number
  * @param pin Pin number(s)
  */
@@ -117,6 +134,12 @@ void gpio_conf_pullup(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
  * @brief Configure pin / pins for input with pulldown.
+ * 
+ * It should be assumed that this will set to GP input in pulldown mode, 
+ * though the actual behavior is platform dependent. Some platforms may 
+ * set all applicable configuration, while others might just enable the 
+ * pulldown.
+
  * @param port Port number
  * @param pin Pin number(s)
  */
@@ -124,6 +147,12 @@ void gpio_conf_pulldown(PORTSELECTOR_t port, PINSELECTOR_t pin);
 
 /** 
  * @brief Configure pin / pins for high impedance input.
+ * 
+ * It should be assumed that this will set to GP input in HiZ mode, 
+ * though the actual behavior is platform dependent. Some platforms may 
+ * set all applicable configuration, while others might just disable 
+ * any pullups / pulldowns.
+ *
  * @param port Port number
  * @param pin Pin number(s)
  */
@@ -132,7 +161,10 @@ void gpio_conf_hiz(PORTSELECTOR_t port, PINSELECTOR_t pin);
 /** 
  * @brief Configure pin / pins for Push-Pull output mode.
  * 
- * If the platform does not support push-pull type outputs, this should error out.
+ * It should be assumed that this will set to GP output in PP mode, 
+ * though the actual behavior is platform dependent. Some platforms may 
+ * set all applicable configuration, while others might just enable the
+ * PP outpur driver.
  * 
  * @param port Port number
  * @param pin Pin number(s)
@@ -143,14 +175,28 @@ void gpio_conf_outmode_pp(PORTSELECTOR_t port, PINSELECTOR_t pin);
 /** 
  * @brief Configure pin / pins as Open Drain output.
  * 
- * If the platform does not support open drain output types, this should error out.
+ * It should be assumed that this will set to GP output in OD mode, 
+ * though the actual behavior is platform dependent. Some platforms may 
+ * set all applicable configuration, while others might just enable the
+ * OD output driver.
  * 
  * @param port Port number
  * @param pin Pin number(s)
  */
 void gpio_conf_outmode_od(PORTSELECTOR_t port, PINSELECTOR_t pin); 
 
-
+/** 
+ * @brief Configure Output Speed of Pin
+ * 
+ * It should be assumed that this will set to GP output in PP mode at 
+ * the provided speed, though the actual behavior is platform dependent. 
+ * Some platforms may set all applicable configuration, while others 
+ * might just set the output speed while others force to output and 
+ * set speed, without changing the output type.
+ * 
+ * @param port Port number
+ * @param pin Pin number(s)
+ */
 void gpio_conf_speed(PORTSELECTOR_t port, PINSELECTOR_t pin, uint8_t speed);
 /**@}*/
 
